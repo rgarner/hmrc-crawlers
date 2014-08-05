@@ -36,12 +36,19 @@ describe Country do
 
           it { should be_an(Array) }
 
+          it { should have(53).rows }
+
           it 'has a header row' do
             csv.should include ['Average for year to', 'Sterling value of currency unit - £', 'Currency units per £1']
           end
 
           it 'has value rows that transform the date' do
-            csv.should include ['2014-03-31','0.0079','126.062557']
+            csv.should include ['2014-03-31', '0.0079', '126.062557']
+          end
+
+          it 'has value rows that transform last-century values' do
+            FIRST_LAST_CENTURY_ROW = 30
+            csv[FIRST_LAST_CENTURY_ROW].should == ['1999-12-30', '0.0093322408', '107.1554']
           end
         end
       end

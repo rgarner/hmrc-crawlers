@@ -1,4 +1,5 @@
 require 'csv/table'
+require 'hmrc/exchange_rates/row'
 
 module Hmrc
   module ExchangeRates
@@ -29,9 +30,7 @@ module Hmrc
 
       def transformed_rows
         table.rows.map do |row|
-          date_parts = row[0].split('.')
-          transformed_date = "20#{date_parts[2]}-#{date_parts[1]}-#{date_parts[0]}"
-          [transformed_date].concat(row[1..-1])
+          Hmrc::ExchangeRates::Row.new(row).to_a
         end
       end
 
