@@ -50,6 +50,11 @@ describe Country do
             FIRST_LAST_CENTURY_ROW = 30
             csv[FIRST_LAST_CENTURY_ROW].should == ['1999-12-30', '0.0093322408', '107.1554']
           end
+
+          it 'has date ranges that transform' do
+            FIRST_RANGE_ROW = 39
+            csv[FIRST_RANGE_ROW].should == ['1994-04-15 to 1995-03-31', '0.0156146', '64.0424']
+          end
         end
       end
     end
