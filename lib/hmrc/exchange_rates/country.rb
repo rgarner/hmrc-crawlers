@@ -38,7 +38,7 @@ module Hmrc
       end
 
       def transformed_rows
-        table.rows.map do |row|
+        table.rows.reject { |r| r[0].strip.gsub("\u00A0", '') == '' }.map do |row|
           Hmrc::ExchangeRates::Row.new(row).to_a
         end
       end

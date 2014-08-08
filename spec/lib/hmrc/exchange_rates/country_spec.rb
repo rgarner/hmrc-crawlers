@@ -105,6 +105,18 @@ describe Country do
           it { should have(29).rows }
         end
       end
+
+      context 'Burma/Myanmar' do
+        let(:country_name) { 'burma-myanmar' }
+
+        describe 'its rows' do
+          subject(:rows) { country.rows }
+
+          it 'has rejected rows it cannot parse' do
+            rows.should have(46).rows
+          end
+        end
+      end
     end
   end
 end
