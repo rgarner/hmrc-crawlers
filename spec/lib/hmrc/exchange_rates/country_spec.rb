@@ -21,7 +21,7 @@ describe Country do
         subject(:country) do
           Country.parse(
             Nokogiri::HTML(
-              File.read('spec/fixtures/exchange_rates/algeria.htm')
+              File.read('spec/fixtures/exchange_rates/algeria.html')
             )
           )
         end
