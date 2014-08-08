@@ -11,14 +11,14 @@ def create_or_update_content_for(page)
     File.join('results', File.basename(page.url.to_s, 'htm')) + 'csv',
     'w'
   ) do |f|
-    f.write(page.doc.to_s)
+    f.write(Hmrc::ExchangeRates::Country.parse(page.doc).to_csv)
   end
 end
 
 Anemone.crawl(File.join(Hmrc::ExchangeRates::BASE_URL, 'index.htm')) do |crawl|
   crawl.on_every_page do |page|
     puts page.url
-    create_or_update_content_for(page) unless page.url =~ Hmrc::ExchangeRates::INDEX_PAGE
+    create_or_update_content_for(page) unless page.url.to_s =~ Hmrc::ExchangeRates::INDEX_PAGE
   end
 
   crawl.focus_crawl do |page|
