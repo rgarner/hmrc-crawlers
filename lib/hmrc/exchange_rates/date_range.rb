@@ -37,7 +37,7 @@ module Hmrc
                                       when SIMPLE_DATE
                                         [nil, $1]
                                       else
-                                        raise ArgumentError, 'unrecognised format'
+                                        raise ArgumentError, "unrecognised format: #{input.class} '#{input}'"
                                       end
       end
 
