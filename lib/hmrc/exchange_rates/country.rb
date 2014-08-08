@@ -12,7 +12,11 @@ module Hmrc
       end
 
       def table
-        @_table ||= Csv::Table.from_html(doc.at_css('#centre_col table'))
+        @_table ||= Csv::Table.from_html(table_node)
+      end
+
+      def table_node
+        doc.at_css('#centre_col table table') || doc.at_css('#centre_col table')
       end
 
       def name

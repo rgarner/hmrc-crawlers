@@ -17,18 +17,18 @@ describe Country do
     end
 
     context 'when the input is good' do
-      describe 'the country' do
-        subject(:country) do
-          Country.parse(
-            Nokogiri::HTML(
-              File.read('spec/fixtures/exchange_rates/algeria.html')
-            )
+      subject(:country) do
+        Country.parse(
+          Nokogiri::HTML(
+            File.read("spec/fixtures/exchange_rates/#{country_name}.html")
           )
-        end
+        )
+      end
 
-        it { should be_a(Country) }
+      context 'Algeria' do
+        let(:country_name) { 'algeria' }
 
-        its(:name)     { should == 'Algeria' }
+        its(:name) { should == 'Algeria' }
         its(:currency) { should == 'Algerian Dinar' }
 
         describe 'its rows' do
@@ -67,6 +67,24 @@ describe Country do
           it 'has value rows that transform the date' do
             to_csv.should include "1999-12-30,0.0093322408,107.1554\n"
           end
+        end
+      end
+
+      context 'France' do
+        let(:country_name) { 'france' }
+
+        it 'finds the table within the table' do
+          country.table_node['width'].should == '589'
+        end
+
+        describe 'its rows' do
+          subject(:rows) { country.rows }
+
+          it 'has a header row' do
+            rows.should include ['Average for year to', 'Sterling value of currency unit - £', 'Currency units per £1']
+          end
+
+          it { should have(59).rows }
         end
       end
     end

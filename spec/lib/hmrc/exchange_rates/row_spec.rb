@@ -19,8 +19,6 @@ describe Row do
       let(:array) { %w(31.03.99 0.45506 2.1975) }
 
       its(:row)            { should == array }
-      its(:from_date)      { should == Date.new(1998, 3, 31) }
-      its(:to_date)        { should == Date.new(1999, 3, 31) }
       its(:sterling_value) { should == '0.45506' }
       its(:currency_per)   { should == '2.1975' }
 
@@ -36,12 +34,22 @@ describe Row do
         '64.0424'
       ] }
 
-      its(:from_date) { should eql(Date.new(1994, 4, 15)) }
-      its(:to_date)   { should eql(Date.new(1995, 3, 31)) }
       its(:sterling_value) { should == '0.0156146' }
       its(:currency_per)   { should == '64.0424' }
 
       its(:to_a) { should == ['1994-04-15 to 1995-03-31', '0.0156146', '64.0424']}
+    end
+
+    context 'the French problem' do
+      let(:array) {[
+        'Average 1. 4.01 to 27. 2.02',
+        '0.0941256201',
+        '10.6241'
+      ]}
+
+      its(:sterling_value) { should == '0.0941256201' }
+      its(:currency_per)   { should == '10.6241' }
+      its(:to_a)      { should == ['2001-04-01 to 2002-02-27', '0.0941256201', '10.6241']}
     end
   end
 end
