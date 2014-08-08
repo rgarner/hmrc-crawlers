@@ -87,6 +87,24 @@ describe Country do
           it { should have(59).rows }
         end
       end
+
+      context 'CIS Russia' do
+        let(:country_name) { 'cis_russia' }
+
+        it 'has extra markup at the bottom' do
+          country.extra_markup.should include('The CIS rate applies to states in the Russian Rouble zone.')
+        end
+
+        describe 'its rows' do
+          subject(:rows) { country.rows }
+
+          it 'has a header row' do
+            rows.should include ['Average for year to', 'Sterling value of currency unit - £', 'Currency units per £1']
+          end
+
+          it { should have(29).rows }
+        end
+      end
     end
   end
 end

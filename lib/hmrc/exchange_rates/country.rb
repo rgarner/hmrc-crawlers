@@ -33,6 +33,10 @@ module Hmrc
         end
       end
 
+      def extra_markup
+        doc.xpath('//div[@id="centre_col"]//table//table/following-sibling::*').to_html
+      end
+
       def transformed_rows
         table.rows.map do |row|
           Hmrc::ExchangeRates::Row.new(row).to_a
