@@ -9,27 +9,6 @@ describe Csv::Table do
           expect { Csv::Table.from_html(1) }.to raise_error(ArgumentError, /expects a node/)
         end
       end
-
-      context 'when a table with two rows that might be a header' do
-        let(:html) do
-          <<-HTML
-          <table width="98%" border="0" cellpadding="1" class="table-border">
-            <tr>
-              <th scope="col"><p>Average for year to</p></th>
-              <th scope="col"><p>Sterling value of currency unit - £</p></th>
-            </tr>
-            <tr>
-              <th scope="col"><p>Sterling value of currency unit - £</p></th>
-              <td>31.03.14</td>
-            </tr>
-          </table>
-          HTML
-        end
-        it 'fails' do
-          expect { Csv::Table.from_html(Nokogiri::HTML.fragment(html).at_css('table')).header }.to \
-            raise_error(ArgumentError, /table has more than one header/)
-        end
-      end
     end
 
     context 'when the input is valid' do
@@ -106,6 +85,42 @@ describe Csv::Table do
         its(:caption) { should be_nil }
 
         it { should have(0).rows }
+      end
+
+      context 'a table found within another table, broken header and caption semantics' do
+        let(:html) do
+          <<-HTML
+            <table width="589" border="0" cellpadding="0">
+              <tbody><tr>
+                <td colspan="3">Unit of currency: ROUBLE (Official/Floating)</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td> <p align="center">Sterling value of currency unit </p>
+                  <p align="center">£</p></td>
+                <td> <p align="center">Currency units per £ </p>
+                  <p align="center">R</p></td>
+              </tr>
+              <tr>
+                <td>31.03.14</td>
+                <td>0.0195</td>
+                <td>51.232159</td>
+              </tr>
+              </tr>
+            </tbody>
+          </table>
+          HTML
+        end
+
+        it 'ignores what is there and constructs a header' do
+          table.header.should == [
+            'Average for year to', 'Sterling value of currency unit - £', 'Currency units per £1'
+          ]
+        end
+
+        it 'gets the caption from the "wrong" place' do
+          table.caption.should == 'Unit of currency: ROUBLE (Official/Floating)'
+        end
       end
     end
 
