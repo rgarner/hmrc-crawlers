@@ -1,5 +1,6 @@
 require 'csv/table'
 require 'hmrc/exchange_rates/row'
+require 'csv'
 
 module Hmrc
   module ExchangeRates
@@ -34,8 +35,16 @@ module Hmrc
         end
       end
 
-      def csv
+      def rows
         [table.header].concat(transformed_rows)
+      end
+
+      def to_csv
+        CSV.generate do |csv|
+          rows.each do |row|
+            csv << row
+          end
+        end
       end
 
       def self.parse(doc)

@@ -31,29 +31,41 @@ describe Country do
         its(:name)     { should == 'Algeria' }
         its(:currency) { should == 'Algerian Dinar' }
 
-        describe 'its CSV' do
-          subject (:csv) { country.csv }
+        describe 'its rows' do
+          subject (:rows) { country.rows }
 
           it { should be_an(Array) }
 
           it { should have(53).rows }
 
           it 'has a header row' do
-            csv.should include ['Average for year to', 'Sterling value of currency unit - £', 'Currency units per £1']
+            rows.should include ['Average for year to', 'Sterling value of currency unit - £', 'Currency units per £1']
           end
 
           it 'has value rows that transform the date' do
-            csv.should include ['2014-03-31', '0.0079', '126.062557']
+            rows.should include ['2014-03-31', '0.0079', '126.062557']
           end
 
           it 'has value rows that transform last-century values' do
             FIRST_LAST_CENTURY_ROW = 30
-            csv[FIRST_LAST_CENTURY_ROW].should == ['1999-12-30', '0.0093322408', '107.1554']
+            rows[FIRST_LAST_CENTURY_ROW].should == ['1999-12-30', '0.0093322408', '107.1554']
           end
 
           it 'has date ranges that transform' do
             FIRST_RANGE_ROW = 39
-            csv[FIRST_RANGE_ROW].should == ['1994-04-15 to 1995-03-31', '0.0156146', '64.0424']
+            rows[FIRST_RANGE_ROW].should == ['1994-04-15 to 1995-03-31', '0.0156146', '64.0424']
+          end
+        end
+
+        describe 'its to_csv' do
+          subject(:to_csv) { country.to_csv }
+
+          it 'has a header row' do
+            to_csv.should include "Average for year to,Sterling value of currency unit - £,Currency units per £1\n"
+          end
+
+          it 'has value rows that transform the date' do
+            to_csv.should include "1999-12-30,0.0093322408,107.1554\n"
           end
         end
       end
