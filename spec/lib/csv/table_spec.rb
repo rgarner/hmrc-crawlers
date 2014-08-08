@@ -62,14 +62,11 @@ describe Csv::Table do
           ]
         end
 
-        it 'has two rows' do
-          table.should have(2).rows
-        end
-
-        describe 'the first row' do
-          subject(:row) { table.rows.first }
-
-          its(:to_a) { should == ['31.03.14', '0.0079', '126.062557'] }
+        it 'has only the data in rows, no header or caption' do
+          table.rows.should == [
+            ['31.03.14', '0.0079', '126.062557'],
+            ['31.12.13', '0.008', '124.489188']
+          ]
         end
       end
 
@@ -87,7 +84,7 @@ describe Csv::Table do
         it { should have(0).rows }
       end
 
-      context 'a table found within another table, broken header and caption semantics' do
+      context 'a table with a tbody found within another table, broken header and caption semantics' do
         let(:html) do
           <<-HTML
             <table width="589" border="0" cellpadding="0">
@@ -112,16 +109,59 @@ describe Csv::Table do
           HTML
         end
 
+        it 'gets the caption from the "wrong" place' do
+          table.caption.should == 'Unit of currency: ROUBLE (Official/Floating)'
+        end
+
         it 'ignores what is there and constructs a header' do
           table.header.should == [
             'Average for year to', 'Sterling value of currency unit - £', 'Currency units per £1'
           ]
         end
 
-        it 'gets the caption from the "wrong" place' do
-          table.caption.should == 'Unit of currency: ROUBLE (Official/Floating)'
+        it 'only has the data in rows, not the pseudo-caption or pseudo-header' do
+          table.rows.should == [['31.03.14', '0.0195', '51.232159']]
         end
       end
+
+      context 'a table with no tbody found within another table, broken header and caption semantics' do
+        let(:html) {
+          <<-HTML
+<table width="589" border="0" cellpadding="0">
+          <tr>
+            <td colspan="3">Unit of currency: FRENCH FRANC - <strong>Euro from
+              1.1.02</strong> </td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td> <p align="center">Sterling value of currency unit </p>
+              <p align="center">&pound;</p></td>
+            <td> <p align="center">Currency units per &pound; </p>
+              <p align="center">F</p></td>
+          </tr>
+          <tr>
+            <td>31.03.14</td>
+            <td>0.8436</td>
+            <td>1.185417</td>
+          </tr>
+          HTML
+        }
+
+        it 'gets the caption from the "wrong" place' do
+          table.caption.should == "Unit of currency: FRENCH FRANC - Euro from\n              1.1.02"
+        end
+
+        it 'ignores what is there and constructs a header' do
+          table.header.should == [
+            'Average for year to', 'Sterling value of currency unit - £', 'Currency units per £1'
+          ]
+        end
+
+        it 'only has the data in rows, not the pseudo-caption or pseudo-header' do
+          table.rows.should == [['31.03.14', '0.8436', '1.185417']]
+        end
+      end
+
     end
 
   end
