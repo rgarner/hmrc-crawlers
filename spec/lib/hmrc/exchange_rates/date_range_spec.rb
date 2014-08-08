@@ -51,6 +51,13 @@ describe DateRange do
       its(:to_date)   { should == Date.new(2002, 2, 27)}
     end
 
+    context 'when an average range with a mad *and* inconsistent date format' do
+      let(:input) { 'Average for 01/07/05 - 31/03/06' }
+
+      its(:from_date) { should == Date.new(2005, 7, 1)}
+      its(:to_date)   { should == Date.new(2006, 3, 31)}
+    end
+
     context 'when an average single date with a mad date format' do
       let(:input) { 'Average for year to 31. 3.01' }
 

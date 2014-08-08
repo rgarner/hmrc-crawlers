@@ -117,6 +117,19 @@ describe Country do
           end
         end
       end
+
+      context 'Romania' do
+        let(:country_name) { 'romania' }
+
+        describe 'its rows' do
+          subject(:rows) { country.rows }
+
+          it 'has dealt with its breaking case rows' do
+            rows.should have(54).rows
+          end
+        end
+
+      end
     end
   end
 end
