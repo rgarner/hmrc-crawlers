@@ -18,11 +18,11 @@ module Hmrc
       end
 
       def sterling_value
-        row[1]
+        row[1].strip
       end
 
       def currency_per
-        row[2]
+        row[2].strip
       end
 
       def to_a

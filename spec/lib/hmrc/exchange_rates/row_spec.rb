@@ -51,5 +51,17 @@ describe Row do
       its(:currency_per)   { should == '10.6241' }
       its(:to_a)      { should == ['2001-04-01 to 2002-02-27', '0.0941256201', '10.6241']}
     end
+
+    context 'whitespace all over the shop' do
+      let(:array) {[
+        '   Average 1. 4.01 to 27. 2.02  ',
+        '  0.0941256201   ',
+        '    10.6241    '
+      ]}
+
+      its(:sterling_value) { should == '0.0941256201' }
+      its(:currency_per)   { should == '10.6241' }
+      its(:to_a)      { should == ['2001-04-01 to 2002-02-27', '0.0941256201', '10.6241']}
+    end
   end
 end
