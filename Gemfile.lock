@@ -13,6 +13,7 @@ GEM
     diff-lcs (1.2.4)
     i18n (0.6.11)
     json (1.8.1)
+    kramdown (1.4.1)
     mini_portile (0.6.0)
     minitest (5.4.0)
     nokogiri (1.6.3.1)
@@ -36,5 +37,6 @@ PLATFORMS
 DEPENDENCIES
   activesupport
   anemone
+  kramdown
   nokogiri
   rspec

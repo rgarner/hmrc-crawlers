@@ -94,10 +94,6 @@ describe Country do
         its(:name)     { should == 'CIS: Russia' }
         its(:currency) { should == 'Rouble (Official/Floating)' }
 
-        it 'has extra markup at the bottom' do
-          country.extra_markup.should include('The CIS rate applies to states in the Russian Rouble zone.')
-        end
-
         describe 'its rows' do
           subject(:rows) { country.rows }
 

@@ -36,7 +36,7 @@ module Hmrc
       end
 
       def extra_markup
-        doc.xpath('//div[@id="centre_col"]//table//table/following-sibling::*').to_html
+        doc.xpath('//div[@id="centre_col"]//table//ul').to_html
       end
 
       def transformed_rows
