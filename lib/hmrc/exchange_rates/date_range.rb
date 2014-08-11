@@ -55,7 +55,7 @@ module Hmrc
                                         @slash_date = true
                                         [zero_fill($1), zero_fill($2)]
                                       when SIMPLE_RANGE
-                                        [$1, $2]
+                                        [zero_fill($1), zero_fill($2)]
                                       when SIMPLE_AVERAGE
                                         [nil, zero_fill($1)]
                                       when SPOT_DATE
