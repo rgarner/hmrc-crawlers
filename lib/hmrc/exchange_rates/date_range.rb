@@ -12,6 +12,7 @@ module Hmrc
       SIMPLE_AVERAGE = Regexp.new("Average for year to #{DATE_PART}")
       SLASH_RANGE    = Regexp.new("Average for #{SLASH_DATE}\s?-\s?#{SLASH_DATE}")
       AVERAGE_RANGE  = Regexp.new("Average #{DATE_PART}\s+to\s+#{DATE_PART}")
+      NO_DAY_RANGE   = Regexp.new('Average for ([0-9]{1,2}\.[0-9]{1,2}) to ([0-9]{1,2}\.[0-9]{1,2})')
       SPOT_DATE      = Regexp.new("Spot rate on #{DATE_PART}")
       EURO_RANGE     = Regexp.new("Euro from #{DATE_PART}\s+to\s+#{DATE_PART}")
 
@@ -27,6 +28,21 @@ module Hmrc
         str.gsub(' ', '0')
       end
 
+      ##
+      # Given a string like 01.02 and a start or end, give a normalized
+      # date string, e.g.
+      #
+      # +snap_date('01.02', :end) => '31.01.02'+ or
+      # +snap_date('01.02', :start) => '01.01.02'+
+      def snap_date(str, start_or_end)
+        day = (start_or_end == :start) ? 1 : -1
+        month, year = *(str.split('.').map(&:to_i))
+
+        Date.new(year, month, day).strftime(DATE_IN_FORMAT)
+      end
+
+      ##
+      # Normalize to HMRC usual of DD.MM.YY
       def normalized_date_strings
         @_normalized_date_strings ||= case input
                                       when AVERAGE_RANGE, EURO_RANGE
@@ -42,7 +58,9 @@ module Hmrc
                                         @spot_date = true
                                         [nil, zero_fill($1)]
                                       when SIMPLE_DATE
-                                        [nil, $1]
+                                        [nil, zero_fill($1)]
+                                      when NO_DAY_RANGE
+                                        [snap_date($1, :start), snap_date($2, :end)]
                                       else
                                         raise ArgumentError, "unrecognised format: #{input.class} '#{input}'"
                                       end
@@ -78,7 +96,7 @@ module Hmrc
 
       def to_s
         dates = from_date_str && !@spot_date ? [:from_date, :to_date] : [:to_date]
-        dates.map {|d| (send d).strftime(DATE_OUT_FORMAT) rescue 'foo' }.join(' to ')
+        dates.map {|d| (send d).strftime(DATE_OUT_FORMAT)}.join(' to ')
       end
 
       def self.parse(str)

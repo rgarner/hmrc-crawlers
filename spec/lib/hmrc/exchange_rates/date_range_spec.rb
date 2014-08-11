@@ -58,6 +58,41 @@ describe DateRange do
       its(:to_date)   { should == Date.new(2006, 3, 31)}
     end
 
+    context 'when an average range for only half a date' do
+      context 'when a month ending in 31' do
+        let(:input) { 'Average for 09.01 to 03.02' }
+
+        it 'goes from the start of the first month' do
+          range.from_date.should == Date.new(2001, 9, 1)
+        end
+        it 'goes to the end of the second' do
+          range.to_date.should == Date.new(2002, 3, 31)
+        end
+      end
+
+      context 'when a non-leap year' do
+        let(:input) { 'Average for 01.01 to 02.01' }
+
+        it 'goes from the start of the first month' do
+          range.from_date.should == Date.new(2001, 1, 1)
+        end
+        it 'goes to the end of February - 28th' do
+          range.to_date.should == Date.new(2001, 2, 28)
+        end
+      end
+
+      context 'when a leap year' do
+        let(:input) { 'Average for 01.12 to 02.12' }
+
+        it 'goes from the start of the first month' do
+          range.from_date.should == Date.new(2012, 1, 1)
+        end
+        it 'goes to the end of February - 28th' do
+          range.to_date.should == Date.new(2012, 2, 29)
+        end
+      end
+    end
+
     context 'when an average single date with a mad date format' do
       let(:input) { 'Average for year to 31. 3.01' }
 

@@ -106,7 +106,7 @@ describe Country do
         end
       end
 
-      context 'Burma/Myanmar' do
+      context 'Burma/Myanmar (blank rows)' do
         let(:country_name) { 'burma-myanmar' }
 
         describe 'its rows' do
@@ -118,7 +118,7 @@ describe Country do
         end
       end
 
-      context 'Romania' do
+      context 'Romania (breaking slash dates)' do
         let(:country_name) { 'romania' }
 
         describe 'its rows' do
@@ -126,6 +126,19 @@ describe Country do
 
           it 'has dealt with its breaking case rows' do
             rows.should have(54).rows
+          end
+        end
+
+      end
+
+      context 'Surinam (breaking no-day dates)' do
+        let(:country_name) { 'surinam' }
+
+        describe 'its rows' do
+          subject(:rows) { country.rows }
+
+          it 'has dealt with its breaking case rows' do
+            rows.should have(55).rows
           end
         end
 
