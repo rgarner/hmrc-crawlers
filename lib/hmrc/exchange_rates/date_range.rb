@@ -17,7 +17,8 @@ module Hmrc
       EURO_RANGE     = Regexp.new("Euro from #{DATE_PART}\s+to\s+#{DATE_PART}")
 
       DATE_CORRECTIONS = {
-        '31.09.91' => '30.09.91'
+        '31.09.91' => '30.09.91',
+        '31.13.06' => '31.12.06'
       }
 
       attr_accessor :input

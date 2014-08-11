@@ -106,5 +106,14 @@ describe DateRange do
       its(:from_date) { should == Date.new(2000, 3, 31)}
       its(:to_date)   { should == Date.new(2001, 3, 31)}
     end
+
+    context 'Honduras has a month after December' do
+      let(:input) { '31.13.06' }
+
+      it 'corrects the to_date' do
+        range.to_date.should == Date.new(2006, 12, 31)
+      end
+      its(:from_date) { should == Date.new(2005, 12, 31)}
+    end
   end
 end
