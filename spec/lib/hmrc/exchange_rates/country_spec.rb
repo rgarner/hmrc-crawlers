@@ -141,7 +141,18 @@ describe Country do
             rows.should have(55).rows
           end
         end
+      end
 
+      context 'Brazil' do
+        let(:country_name) { 'brazil' }
+
+        describe 'its rows' do
+          subject(:rows) { country.rows }
+
+          it 'has dealt with its breaking case rows' do
+            rows.should have(57).rows
+          end
+        end
       end
     end
   end

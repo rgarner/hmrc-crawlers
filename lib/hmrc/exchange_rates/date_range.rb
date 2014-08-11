@@ -16,6 +16,10 @@ module Hmrc
       SPOT_DATE      = Regexp.new("Spot rate on #{DATE_PART}")
       EURO_RANGE     = Regexp.new("Euro from #{DATE_PART}\s+to\s+#{DATE_PART}")
 
+      DATE_CORRECTIONS = {
+        '31.09.91' => '30.09.91'
+      }
+
       attr_accessor :input
       def initialize(input)
         self.input = input
@@ -78,20 +82,23 @@ module Hmrc
         @slash_date ? DATE_SLASH_FORMAT : DATE_IN_FORMAT
       end
 
+      def parse_date(str)
+        str = DATE_CORRECTIONS[str] || str
+        Date.strptime(str, date_in_format)
+      rescue
+        raise ArgumentError, "parse_date failed - #{to_date_str.class} #{to_date_str}"
+      end
+
       def from_date
         @_from_date ||= if from_date_str
-          Date.strptime(from_date_str, date_in_format)
+          parse_date(from_date_str)
         else
           Date.new(to_date.year - 1, to_date.month, to_date.day) unless @spot_date
         end
       end
 
       def to_date
-        begin
-          @_to_date ||= Date.strptime(to_date_str, date_in_format)
-        rescue
-          raise ArgumentError, "strptime failed - #{to_date_str.class} #{to_date_str}"
-        end
+        @_to_date ||= parse_date(to_date_str)
       end
 
       def to_s
