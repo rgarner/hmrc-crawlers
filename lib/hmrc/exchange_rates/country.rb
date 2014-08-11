@@ -1,6 +1,7 @@
 require 'csv/table'
 require 'hmrc/exchange_rates/row'
 require 'csv'
+require 'active_support/core_ext/string/inflections'
 
 module Hmrc
   module ExchangeRates
@@ -21,7 +22,8 @@ module Hmrc
 
       def name
         @_name ||= begin
-          /exchange rates:.*\n\s+(?<parsed_name>.*)\n/m =~ doc.at_css('#centre_col > h1').text
+          title_text = doc.at_css('title').text
+          /exchange rates:\s*(?<parsed_name>.*)/m =~ title_text
           parsed_name
         end
       end
@@ -29,7 +31,7 @@ module Hmrc
       def currency
         @_currency ||= begin
           /:\s+(?<currency_name>.*)$/ =~ table.caption
-          currency_name.split(' ').map(&:capitalize).join(' ')
+          currency_name.titleize
         end
       end
 
