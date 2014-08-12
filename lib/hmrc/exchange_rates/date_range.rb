@@ -106,10 +106,6 @@ module Hmrc
         dates = from_date_str && !@spot_date ? [:from_date, :to_date] : [:to_date]
         dates.map {|d| (send d).strftime(DATE_OUT_FORMAT)}.join(' to ')
       end
-
-      def self.parse(str)
-        DateRange.new(str)
-      end
     end
   end
 end
