@@ -1,19 +1,19 @@
-Type,From date,To date,Sterling value of currency unit - £,Currency units per £1
-Average,1997-03-31,1998-03-31,0.675813,1.4797
-Average,1996-12-30,1997-12-30,0.690036,1.4492
-Average,1996-03-31,1997-03-31,0.774533,1.2911
-Average,1995-12-31,1996-12-31,0.80141,1.2478
-Average,1995-03-31,1996-03-31,0.825083,1.212
-Average,1994-12-30,1995-12-30,0.819605,1.2201
-Average,1994-03-31,1995-03-31,0.784068,1.2754
-Average,1993-12-30,1994-12-30,0.773216,1.2933
-Average,1993-03-30,1994-03-30,0.766166,1.3052
-Average,1992-12-31,1993-12-31,0.778331,1.2848
-Average,1992-03-31,1993-03-31,0.7570022,1.321
-Average,1991-12-31,1992-12-31,0.7346998,1.3611
-Average,1991-03-31,1992-03-31,0.7068136,1.4148
-Average,1990-12-31,1991-12-31,0.7050197,1.4184
-Average,1990-03-31,1991-03-31,0.709270,1.4099
-Average,1989-12-31,1990-12-31,0.716589,1.3955
-Average,1989-03-31,1990-03-31,0.726744,1.3760
-Average,1988-12-31,1989-12-31,0.703829,1.4208
+Type,From date,To date,Sterling value of currency unit - £,Currency units per £1,Currency
+Average,1997-03-31,1998-03-31,0.675813,1.4797,European Currency Unit
+Average,1996-12-30,1997-12-30,0.690036,1.4492,European Currency Unit
+Average,1996-03-31,1997-03-31,0.774533,1.2911,European Currency Unit
+Average,1995-12-31,1996-12-31,0.80141,1.2478,European Currency Unit
+Average,1995-03-31,1996-03-31,0.825083,1.212,European Currency Unit
+Average,1994-12-30,1995-12-30,0.819605,1.2201,European Currency Unit
+Average,1994-03-31,1995-03-31,0.784068,1.2754,European Currency Unit
+Average,1993-12-30,1994-12-30,0.773216,1.2933,European Currency Unit
+Average,1993-03-30,1994-03-30,0.766166,1.3052,European Currency Unit
+Average,1992-12-31,1993-12-31,0.778331,1.2848,European Currency Unit
+Average,1992-03-31,1993-03-31,0.7570022,1.321,European Currency Unit
+Average,1991-12-31,1992-12-31,0.7346998,1.3611,European Currency Unit
+Average,1991-03-31,1992-03-31,0.7068136,1.4148,European Currency Unit
+Average,1990-12-31,1991-12-31,0.7050197,1.4184,European Currency Unit
+Average,1990-03-31,1991-03-31,0.709270,1.4099,European Currency Unit
+Average,1989-12-31,1990-12-31,0.716589,1.3955,European Currency Unit
+Average,1989-03-31,1990-03-31,0.726744,1.3760,European Currency Unit
+Average,1988-12-31,1989-12-31,0.703829,1.4208,European Currency Unit

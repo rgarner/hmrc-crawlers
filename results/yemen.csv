@@ -1,38 +1,38 @@
-Type,From date,To date,Sterling value of currency unit - £,Currency units per £1
-Average,2013-03-31,2014-03-31,0.0029,340.972288
-Average,2012-12-31,2013-12-31,0.003,336.214943
-Average,2012-03-31,2013-03-31,0.0029,339.741673
-Average,2011-12-31,2012-12-31,0.0029,341.023040
-Average,2011-03-31,2012-03-31,0.0029,346.547710
-Average,2010-12-31,2011-12-31,0.0029,345.071235
-Average,2010-03-31,2011-03-31,0.0029,340.988
-Average,2009-12-31,2010-12-31,0.003,338.921
-Average,2009-03-31,2010-03-31,0.0030340,329.603
-Average,2008-12-31,2009-12-31,0.0031403,318.436
-Average,2008-03-31,2009-03-31,0.0029279,341.543
-Average,2007-12-31,2008-12-31,0.0027127,368.639
-Average,2007-03-31,2008-03-31,0.0024983,400.27
-Average,2006-12-31,2007-12-31,0.0025073,398.84
-Average,2006-03-31,2007-03-31,0.002658392,376.1672
-Average,2005-12-31,2006-12-31,0.002743708,364.4703
-Average,2005-03-31,2006-03-31,0.0029,345.207
-Average,2004-12-31,2005-12-31,0.00287342,348.0178
-Average,2004-03-31,2005-03-31,0.002918,342.6463
-Average,2003-12-31,2004-12-31,0.00295447,338.4705
-Average,2003-03-31,2004-03-31,0.003267,306.0884
-Average,2002-12-31,2003-12-31,0.00341644,292.7023
-Average,2001-03-28,2002-03-28,0.0041050768,243.6008
-Average,2000-12-31,2001-12-31,0.0041657276,240.0541
-Average,2000-03-31,2001-03-31,0.0042018908,237.9881
-Average,1999-12-29,2000-12-29,0.0040971701,244.0709
-Average,1999-03-31,2000-03-31,0.0040115806,249.2783
-Average,1998-12-30,1999-12-30,0.0041395954,241.5695
-Average,1998-03-31,1999-03-31,0.00449111,222.6623
-Average,1997-12-31,1998-12-31,0.0045812,218.2828
-Average,1997-03-31,1998-03-31,0.004796,208.4937
-Average,1996-12-30,1997-12-30,0.0047423,210.8668
-Average,1996-01-01,1996-03-31,0.021763,45.9503
-Average,1995-03-30,1995-03-31,0.0043853,228.032
-Average,1995-02-24,1995-03-29,0.0074598,134.0513
-Average,1995-03-30,1995-03-31,0.0122789,81.4399
-Average,1995-02-24,1995-03-29,0.0522187,19.1502
+Type,From date,To date,Sterling value of currency unit - £,Currency units per £1,Currency
+Average,2013-03-31,2014-03-31,0.0029,340.972288,Rial (Official Rate) Rial (Free Rate)
+Average,2012-12-31,2013-12-31,0.003,336.214943,Rial (Official Rate) Rial (Free Rate)
+Average,2012-03-31,2013-03-31,0.0029,339.741673,Rial (Official Rate) Rial (Free Rate)
+Average,2011-12-31,2012-12-31,0.0029,341.023040,Rial (Official Rate) Rial (Free Rate)
+Average,2011-03-31,2012-03-31,0.0029,346.547710,Rial (Official Rate) Rial (Free Rate)
+Average,2010-12-31,2011-12-31,0.0029,345.071235,Rial (Official Rate) Rial (Free Rate)
+Average,2010-03-31,2011-03-31,0.0029,340.988,Rial (Official Rate) Rial (Free Rate)
+Average,2009-12-31,2010-12-31,0.003,338.921,Rial (Official Rate) Rial (Free Rate)
+Average,2009-03-31,2010-03-31,0.0030340,329.603,Rial (Official Rate) Rial (Free Rate)
+Average,2008-12-31,2009-12-31,0.0031403,318.436,Rial (Official Rate) Rial (Free Rate)
+Average,2008-03-31,2009-03-31,0.0029279,341.543,Rial (Official Rate) Rial (Free Rate)
+Average,2007-12-31,2008-12-31,0.0027127,368.639,Rial (Official Rate) Rial (Free Rate)
+Average,2007-03-31,2008-03-31,0.0024983,400.27,Rial (Official Rate) Rial (Free Rate)
+Average,2006-12-31,2007-12-31,0.0025073,398.84,Rial (Official Rate) Rial (Free Rate)
+Average,2006-03-31,2007-03-31,0.002658392,376.1672,Rial (Official Rate) Rial (Free Rate)
+Average,2005-12-31,2006-12-31,0.002743708,364.4703,Rial (Official Rate) Rial (Free Rate)
+Average,2005-03-31,2006-03-31,0.0029,345.207,Rial (Official Rate) Rial (Free Rate)
+Average,2004-12-31,2005-12-31,0.00287342,348.0178,Rial (Official Rate) Rial (Free Rate)
+Average,2004-03-31,2005-03-31,0.002918,342.6463,Rial (Official Rate) Rial (Free Rate)
+Average,2003-12-31,2004-12-31,0.00295447,338.4705,Rial (Official Rate) Rial (Free Rate)
+Average,2003-03-31,2004-03-31,0.003267,306.0884,Rial (Official Rate) Rial (Free Rate)
+Average,2002-12-31,2003-12-31,0.00341644,292.7023,Rial (Official Rate) Rial (Free Rate)
+Average,2001-03-28,2002-03-28,0.0041050768,243.6008,Rial (Official Rate) Rial (Free Rate)
+Average,2000-12-31,2001-12-31,0.0041657276,240.0541,Rial (Official Rate) Rial (Free Rate)
+Average,2000-03-31,2001-03-31,0.0042018908,237.9881,Rial (Official Rate) Rial (Free Rate)
+Average,1999-12-29,2000-12-29,0.0040971701,244.0709,Rial (Official Rate) Rial (Free Rate)
+Average,1999-03-31,2000-03-31,0.0040115806,249.2783,Rial (Official Rate) Rial (Free Rate)
+Average,1998-12-30,1999-12-30,0.0041395954,241.5695,Rial (Official Rate) Rial (Free Rate)
+Average,1998-03-31,1999-03-31,0.00449111,222.6623,Rial (Official Rate) Rial (Free Rate)
+Average,1997-12-31,1998-12-31,0.0045812,218.2828,Rial (Official Rate) Rial (Free Rate)
+Average,1997-03-31,1998-03-31,0.004796,208.4937,Rial (Official Rate) Rial (Free Rate)
+Average,1996-12-30,1997-12-30,0.0047423,210.8668,Rial (Official Rate) Rial (Free Rate)
+Average,1996-01-01,1996-03-31,0.021763,45.9503,Rial (Official Rate) Rial (Free Rate)
+Average,1995-03-30,1995-03-31,0.0043853,228.032,Rial (Official Rate) Rial (Free Rate)
+Average,1995-02-24,1995-03-29,0.0074598,134.0513,Rial (Official Rate) Rial (Free Rate)
+Average,1995-03-30,1995-03-31,0.0122789,81.4399,Rial (Official Rate) Rial (Free Rate)
+Average,1995-02-24,1995-03-29,0.0522187,19.1502,Rial (Official Rate) Rial (Free Rate)

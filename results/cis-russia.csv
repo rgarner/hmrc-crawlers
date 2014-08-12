@@ -1,29 +1,29 @@
-Type,From date,To date,Sterling value of currency unit - £,Currency units per £1
-Average,2013-03-31,2014-03-31,0.0195,51.232159
-Average,2012-12-31,2013-12-31,0.0205,48.785824
-Average,2000-03-31,2001-03-31,0.0240201577,41.6317
-Average,1999-12-29,2000-12-29,0.0233970669,42.7404
-Average,1998-01-01,1998-03-31,0.100635,9.9369
-Average,1997-04-01,1997-12-31,0.0001047,9548.9477
-Average,1996-12-30,1997-12-30,0.0001055,9475.4158
-Average,1996-03-31,1997-03-31,0.000118,8451.753
-Average,1996-01-01,1996-03-31,0.000126,7958.611
-Average,1996-01-01,1996-03-31,1.009285,0.9908
-Average,1995-03-31,1996-03-31,0.000136,7361.472
-Average,1995-03-31,1996-03-31,1.003311,0.9967
-Average,1994-12-30,1995-12-30,0.000139,7186.95
-Average,1994-12-30,1995-12-30,0.988826,1.0113
-Average,1994-03-31,1995-03-31,0.000229,4370.108
-Average,1994-03-31,1995-03-31,1.004924,0.9951
-Average,1993-12-30,1994-12-30,0.000305,3282.659
-Average,1993-12-30,1994-12-30,0.9502,1.05241
-Average,1992-12-31,1993-12-31,0.0005835,1713.77
-Average,1993-03-30,1994-03-30,1.1538017,0.8667
-Average,1992-12-31,1993-12-31,Not Available, 
-Average,1992-12-31,1993-12-31,1.1538017,0.8667
-Average,1992-03-31,1993-03-31,1.0336985,0.9674
-Average,1991-12-31,1992-12-31,0.9955201,1.0045
-Average,1991-03-31,1992-03-31,0.9869719,1.0132
-Average,1990-12-31,1991-12-31,0.9727626,1.0280
-Average,1990-03-31,1991-03-31,0.949758,1.0529
-Average,1989-12-31,1990-12-31,0.967024,1.0341
+Type,From date,To date,Sterling value of currency unit - £,Currency units per £1,Currency
+Average,2013-03-31,2014-03-31,0.0195,51.232159,Rouble (Official/Floating)
+Average,2012-12-31,2013-12-31,0.0205,48.785824,Rouble (Official/Floating)
+Average,2000-03-31,2001-03-31,0.0240201577,41.6317,Rouble (Official/Floating)
+Average,1999-12-29,2000-12-29,0.0233970669,42.7404,Rouble (Official/Floating)
+Average,1998-01-01,1998-03-31,0.100635,9.9369,Rouble (Official/Floating)
+Average,1997-04-01,1997-12-31,0.0001047,9548.9477,Rouble (Official/Floating)
+Average,1996-12-30,1997-12-30,0.0001055,9475.4158,Rouble (Official/Floating)
+Average,1996-03-31,1997-03-31,0.000118,8451.753,Rouble (Official/Floating)
+Average,1996-01-01,1996-03-31,0.000126,7958.611,Rouble (Official/Floating)
+Average,1996-01-01,1996-03-31,1.009285,0.9908,Rouble (Official/Floating)
+Average,1995-03-31,1996-03-31,0.000136,7361.472,Rouble (Official/Floating)
+Average,1995-03-31,1996-03-31,1.003311,0.9967,Rouble (Official/Floating)
+Average,1994-12-30,1995-12-30,0.000139,7186.95,Rouble (Official/Floating)
+Average,1994-12-30,1995-12-30,0.988826,1.0113,Rouble (Official/Floating)
+Average,1994-03-31,1995-03-31,0.000229,4370.108,Rouble (Official/Floating)
+Average,1994-03-31,1995-03-31,1.004924,0.9951,Rouble (Official/Floating)
+Average,1993-12-30,1994-12-30,0.000305,3282.659,Rouble (Official/Floating)
+Average,1993-12-30,1994-12-30,0.9502,1.05241,Rouble (Official/Floating)
+Average,1992-12-31,1993-12-31,0.0005835,1713.77,Rouble (Official/Floating)
+Average,1993-03-30,1994-03-30,1.1538017,0.8667,Rouble (Official/Floating)
+Average,1992-12-31,1993-12-31,Not Available, ,Rouble (Official/Floating)
+Average,1992-12-31,1993-12-31,1.1538017,0.8667,Rouble (Official/Floating)
+Average,1992-03-31,1993-03-31,1.0336985,0.9674,Rouble (Official/Floating)
+Average,1991-12-31,1992-12-31,0.9955201,1.0045,Rouble (Official/Floating)
+Average,1991-03-31,1992-03-31,0.9869719,1.0132,Rouble (Official/Floating)
+Average,1990-12-31,1991-12-31,0.9727626,1.0280,Rouble (Official/Floating)
+Average,1990-03-31,1991-03-31,0.949758,1.0529,Rouble (Official/Floating)
+Average,1989-12-31,1990-12-31,0.967024,1.0341,Rouble (Official/Floating)
