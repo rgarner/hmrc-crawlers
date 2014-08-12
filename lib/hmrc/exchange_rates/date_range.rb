@@ -24,8 +24,12 @@ module Hmrc
       attr_accessor :input
       def initialize(input)
         self.input = input
-        @spot_date = false
         @slash_date = false
+        normalized_date_strings
+      end
+
+      def type
+        @type || :average_for_year_to
       end
 
       def zero_fill(str)
@@ -60,7 +64,7 @@ module Hmrc
                                       when SIMPLE_AVERAGE
                                         [nil, zero_fill($1)]
                                       when SPOT_DATE
-                                        @spot_date = true
+                                        @type = :spot
                                         [nil, zero_fill($1)]
                                       when SIMPLE_DATE
                                         [nil, zero_fill($1)]
@@ -94,7 +98,7 @@ module Hmrc
         @_from_date ||= if from_date_str
           parse_date(from_date_str)
         else
-          Date.new(to_date.year - 1, to_date.month, to_date.day) unless @spot_date
+          Date.new(to_date.year - 1, to_date.month, to_date.day) unless type == :spot
         end
       end
 
