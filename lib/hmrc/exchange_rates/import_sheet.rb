@@ -12,7 +12,7 @@ module Hmrc
         'body',
         'organisation',
         'document_collection_1',
-        'first_published',
+        'publication_date',
         'publication_type',
         'json_attachments'
       ]

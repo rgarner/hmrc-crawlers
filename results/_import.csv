@@ -1,4 +1,4 @@
-old_url,title,summary,body,organisation,document_collection_1,first_published,publication_type,json_attachments
+old_url,title,summary,body,organisation,document_collection_1,publication_date,publication_type,json_attachments
 http://www.hmrc.gov.uk/exrate/australia.htm,Foreign Exchange Rates: Australia,Historical exchange rates for Australia,"# Foreign Exchange Rates: Australia
 
 ## Unit of currency: Australian Dollar
@@ -11,18 +11,18 @@ http://www.hmrc.gov.uk/exrate/austria.htm,Foreign Exchange Rates: Austria,Histor
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Austria"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/austria.csv""}]"
-http://www.hmrc.gov.uk/exrate/algeria.htm,Foreign Exchange Rates: Algeria,Historical exchange rates for Algeria,"# Foreign Exchange Rates: Algeria
-
-## Unit of currency: Algerian Dinar
-
-
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Algeria"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/algeria.csv""}]"
 http://www.hmrc.gov.uk/exrate/argentina.htm,Foreign Exchange Rates: Argentina,Historical exchange rates for Argentina,"# Foreign Exchange Rates: Argentina
 
 ## Unit of currency: Peso
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Argentina"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/argentina.csv""}]"
+http://www.hmrc.gov.uk/exrate/algeria.htm,Foreign Exchange Rates: Algeria,Historical exchange rates for Algeria,"# Foreign Exchange Rates: Algeria
+
+## Unit of currency: Algerian Dinar
+
+
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Algeria"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/algeria.csv""}]"
 http://www.hmrc.gov.uk/exrate/bahrain.htm,Foreign Exchange Rates: Bahrain,Historical exchange rates for Bahrain,"# Foreign Exchange Rates: Bahrain
 
 ## Unit of currency: Bahrain Dinar
@@ -53,12 +53,6 @@ http://www.hmrc.gov.uk/exrate/bolivia.htm,Foreign Exchange Rates: Bolivia,Histor
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Bolivia"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/bolivia.csv""}]"
-http://www.hmrc.gov.uk/exrate/brazil.htm,Foreign Exchange Rates: Brazil,Historical exchange rates for Brazil,"# Foreign Exchange Rates: Brazil
-
-## Unit of currency: Cruzeiro/Real
-
-
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Brazil"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/brazil.csv""}]"
 http://www.hmrc.gov.uk/exrate/botswana.htm,Foreign Exchange Rates: Botswana,Historical exchange rates for Botswana,"# Foreign Exchange Rates: Botswana
 
 ## Unit of currency: Pula
@@ -71,48 +65,48 @@ http://www.hmrc.gov.uk/exrate/brunei.htm,Foreign Exchange Rates: Brunei,Historic
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Brunei"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/brunei.csv""}]"
-http://www.hmrc.gov.uk/exrate/bulgaria.htm,Foreign Exchange Rates: Bulgaria,Historical exchange rates for Bulgaria,"# Foreign Exchange Rates: Bulgaria
+http://www.hmrc.gov.uk/exrate/brazil.htm,Foreign Exchange Rates: Brazil,Historical exchange rates for Brazil,"# Foreign Exchange Rates: Brazil
 
-## Unit of currency: Lev
+## Unit of currency: Cruzeiro/Real
 
 
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Bulgaria"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/bulgaria.csv""}]"
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Brazil"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/brazil.csv""}]"
 http://www.hmrc.gov.uk/exrate/burma-myanmar.htm,Foreign Exchange Rates: Burma: Myanmar,Historical exchange rates for Burma: Myanmar,"# Foreign Exchange Rates: Burma: Myanmar
 
 ## Unit of currency: Burmese Kyat
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Burma: Myanmar"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/burma-myanmar.csv""}]"
+http://www.hmrc.gov.uk/exrate/bulgaria.htm,Foreign Exchange Rates: Bulgaria,Historical exchange rates for Bulgaria,"# Foreign Exchange Rates: Bulgaria
+
+## Unit of currency: Lev
+
+
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Bulgaria"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/bulgaria.csv""}]"
 http://www.hmrc.gov.uk/exrate/burundi.htm,Foreign Exchange Rates: Burundi,Historical exchange rates for Burundi,"# Foreign Exchange Rates: Burundi
 
 ## Unit of currency: Burundi Franc
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Burundi"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/burundi.csv""}]"
-http://www.hmrc.gov.uk/exrate/cayman-islands.htm,Foreign Exchange Rates: Cayman Islands,Historical exchange rates for Cayman Islands,"# Foreign Exchange Rates: Cayman Islands
-
-## Unit of currency: Cayman Islands Dollar
-
-
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Cayman Islands"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/cayman-islands.csv""}]"
 http://www.hmrc.gov.uk/exrate/canada.htm,Foreign Exchange Rates: Canada,Historical exchange rates for Canada,"# Foreign Exchange Rates: Canada
 
 ## Unit of currency: Canadian Dollar
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Canada"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/canada.csv""}]"
-http://www.hmrc.gov.uk/exrate/china.htm,Foreign Exchange Rates: China,Historical exchange rates for China,"# Foreign Exchange Rates: China
-
-## Unit of currency: Renminbi Yuan
-
-
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: China"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/china.csv""}]"
 http://www.hmrc.gov.uk/exrate/chile.htm,Foreign Exchange Rates: Chile,Historical exchange rates for Chile,"# Foreign Exchange Rates: Chile
 
 ## Unit of currency: Chilean Peso
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Chile"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/chile.csv""}]"
+http://www.hmrc.gov.uk/exrate/china.htm,Foreign Exchange Rates: China,Historical exchange rates for China,"# Foreign Exchange Rates: China
+
+## Unit of currency: Renminbi Yuan
+
+
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: China"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/china.csv""}]"
 http://www.hmrc.gov.uk/exrate/cis-russia.htm,Foreign Exchange Rates: CIS: Russia,Historical exchange rates for CIS: Russia,"# Foreign Exchange Rates: CIS: Russia
 
 ## Unit of currency: Rouble (Official/Floating)
@@ -128,30 +122,36 @@ http://www.hmrc.gov.uk/exrate/cis-russia.htm,Foreign Exchange Rates: CIS: Russia
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: CIS: Russia"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/cis-russia.csv""}]"
-http://www.hmrc.gov.uk/exrate/colombia.htm,Foreign Exchange Rates: Colombia,Historical exchange rates for Colombia,"# Foreign Exchange Rates: Colombia
+http://www.hmrc.gov.uk/exrate/cayman-islands.htm,Foreign Exchange Rates: Cayman Islands,Historical exchange rates for Cayman Islands,"# Foreign Exchange Rates: Cayman Islands
 
-## Unit of currency: Colombian Peso
+## Unit of currency: Cayman Islands Dollar
 
 
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Colombia"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/colombia.csv""}]"
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Cayman Islands"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/cayman-islands.csv""}]"
 http://www.hmrc.gov.uk/exrate/congo.htm,Foreign Exchange Rates: Congo Dem Rep (Zaire),Historical exchange rates for Congo Dem Rep (Zaire),"# Foreign Exchange Rates: Congo Dem Rep (Zaire)
 
 ## Unit of currency: Congolese Franc
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Congo Dem Rep (Zaire)"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/congo.csv""}]"
-http://www.hmrc.gov.uk/exrate/costa-rica.htm,Foreign Exchange Rates: Costa Rica,Historical exchange rates for Costa Rica,"# Foreign Exchange Rates: Costa Rica
-
-## Unit of currency: Colon
-
-
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Costa Rica"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/costa-rica.csv""}]"
 http://www.hmrc.gov.uk/exrate/cuba.htm,Foreign Exchange Rates: Cuba,Historical exchange rates for Cuba,"# Foreign Exchange Rates: Cuba
 
 ## Unit of currency: Cuban Peso
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Cuba"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/cuba.csv""}]"
+http://www.hmrc.gov.uk/exrate/colombia.htm,Foreign Exchange Rates: Colombia,Historical exchange rates for Colombia,"# Foreign Exchange Rates: Colombia
+
+## Unit of currency: Colombian Peso
+
+
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Colombia"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/colombia.csv""}]"
+http://www.hmrc.gov.uk/exrate/costa-rica.htm,Foreign Exchange Rates: Costa Rica,Historical exchange rates for Costa Rica,"# Foreign Exchange Rates: Costa Rica
+
+## Unit of currency: Colon
+
+
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Costa Rica"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/costa-rica.csv""}]"
 http://www.hmrc.gov.uk/exrate/cyprus.htm,Foreign Exchange Rates: Cyprus,Historical exchange rates for Cyprus,"# Foreign Exchange Rates: Cyprus
 
 ## Unit of currency: Cyprus Pound (To 31.12.07) (Euro From 01.01.08)
@@ -176,18 +176,18 @@ http://www.hmrc.gov.uk/exrate/ecuador.htm,Foreign Exchange Rates: Ecuador,Histor
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Ecuador"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/ecuador.csv""}]"
-http://www.hmrc.gov.uk/exrate/el-salvador.htm,Foreign Exchange Rates: El Salvador,Historical exchange rates for El Salvador,"# Foreign Exchange Rates: El Salvador
-
-## Unit of currency: Colon
-
-
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: El Salvador"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/el-salvador.csv""}]"
 http://www.hmrc.gov.uk/exrate/egypt.htm,Foreign Exchange Rates: Egypt,Historical exchange rates for Egypt,"# Foreign Exchange Rates: Egypt
 
 ## Unit of currency: Egyptian Pound
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Egypt"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/egypt.csv""}]"
+http://www.hmrc.gov.uk/exrate/el-salvador.htm,Foreign Exchange Rates: El Salvador,Historical exchange rates for El Salvador,"# Foreign Exchange Rates: El Salvador
+
+## Unit of currency: Colon
+
+
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: El Salvador"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/el-salvador.csv""}]"
 http://www.hmrc.gov.uk/exrate/ems.htm,Foreign Exchange Rates: EMS,Historical exchange rates for EMS,"# Foreign Exchange Rates: EMS
 
 ## Unit of currency: European Currency Unit
@@ -206,12 +206,6 @@ http://www.hmrc.gov.uk/exrate/european-union.htm,Foreign Exchange Rates: Europea
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: European Union"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/european-union.csv""}]"
-http://www.hmrc.gov.uk/exrate/france.htm,Foreign Exchange Rates: France,Historical exchange rates for France,"# Foreign Exchange Rates: France
-
-## Unit of currency: French Franc   Euro From 
-
-
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: France"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/france.csv""}]"
 http://www.hmrc.gov.uk/exrate/finland.htm,Foreign Exchange Rates: Finland,Historical exchange rates for Finland,"# Foreign Exchange Rates: Finland
 
 ## Unit of currency: Finnish Markka   Euro From 1.1.02
@@ -226,18 +220,24 @@ http://www.hmrc.gov.uk/exrate/fiji-islands.htm,Foreign Exchange Rates: Fiji Isla
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Fiji Islands"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/fiji-islands.csv""}]"
-http://www.hmrc.gov.uk/exrate/french-city-africa.htm,Foreign Exchange Rates: French Cty Africa,Historical exchange rates for French Cty Africa,"# Foreign Exchange Rates: French Cty Africa
+http://www.hmrc.gov.uk/exrate/france.htm,Foreign Exchange Rates: France,Historical exchange rates for France,"# Foreign Exchange Rates: France
 
-## Unit of currency: Cfa Franc
+## Unit of currency: French Franc   Euro From 
 
 
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: French Cty Africa"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/french-city-africa.csv""}]"
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: France"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/france.csv""}]"
 http://www.hmrc.gov.uk/exrate/french-pacific-islands.htm,Foreign Exchange Rates: French Pacific Is.,Historical exchange rates for French Pacific Is.,"# Foreign Exchange Rates: French Pacific Is.
 
 ## Unit of currency: C.F.P Franc
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: French Pacific Is."",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/french-pacific-islands.csv""}]"
+http://www.hmrc.gov.uk/exrate/french-city-africa.htm,Foreign Exchange Rates: French Cty Africa,Historical exchange rates for French Cty Africa,"# Foreign Exchange Rates: French Cty Africa
+
+## Unit of currency: Cfa Franc
+
+
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: French Cty Africa"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/french-city-africa.csv""}]"
 http://www.hmrc.gov.uk/exrate/gambia.htm,Foreign Exchange Rates: Gambia,Historical exchange rates for Gambia,"# Foreign Exchange Rates: Gambia
 
 ## Unit of currency: Dalasi
@@ -265,12 +265,6 @@ http://www.hmrc.gov.uk/exrate/greece.htm,Foreign Exchange Rates: Greece,Historic
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Greece"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/greece.csv""}]"
-http://www.hmrc.gov.uk/exrate/guyana.htm,Foreign Exchange Rates: Guyana,Historical exchange rates for Guyana,"# Foreign Exchange Rates: Guyana
-
-## Unit of currency: Guyanese Dollar
-
-
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Guyana"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/guyana.csv""}]"
 http://www.hmrc.gov.uk/exrate/grenada.htm,Foreign Exchange Rates: Grenada Windward Isles,Historical exchange rates for Grenada Windward Isles,"# Foreign Exchange Rates: Grenada Windward Isles
 
 ## Unit of currency: E. Carr. Dollar
@@ -289,12 +283,12 @@ http://www.hmrc.gov.uk/exrate/hong-kong.htm,Foreign Exchange Rates: Hong Kong,Hi
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Hong Kong"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/hong-kong.csv""}]"
-http://www.hmrc.gov.uk/exrate/iceland.htm,Foreign Exchange Rates: Iceland,Historical exchange rates for Iceland,"# Foreign Exchange Rates: Iceland
+http://www.hmrc.gov.uk/exrate/guyana.htm,Foreign Exchange Rates: Guyana,Historical exchange rates for Guyana,"# Foreign Exchange Rates: Guyana
 
-## Unit of currency: Icelandic Krona
+## Unit of currency: Guyanese Dollar
 
 
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Iceland"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/iceland.csv""}]"
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Guyana"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/guyana.csv""}]"
 http://www.hmrc.gov.uk/exrate/hungary.htm,Foreign Exchange Rates: Hungary,Historical exchange rates for Hungary,"# Foreign Exchange Rates: Hungary
 
 ## Unit of currency: Forint
@@ -307,30 +301,44 @@ http://www.hmrc.gov.uk/exrate/india.htm,Foreign Exchange Rates: India,Historical
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: India"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/india.csv""}]"
-http://www.hmrc.gov.uk/exrate/iraq.htm,Foreign Exchange Rates: Iraq,Historical exchange rates for Iraq,"# Foreign Exchange Rates: Iraq
+http://www.hmrc.gov.uk/exrate/iceland.htm,Foreign Exchange Rates: Iceland,Historical exchange rates for Iceland,"# Foreign Exchange Rates: Iceland
 
-## Unit of currency: Iraqi Dinar
-
-
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Iraq"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/iraq.csv""}]"
-http://www.hmrc.gov.uk/exrate/iran.htm,Foreign Exchange Rates: Iran,Historical exchange rates for Iran,"# Foreign Exchange Rates: Iran
-
-## Unit of currency: Iranian Rial
+## Unit of currency: Icelandic Krona
 
 
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Iran"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/iran.csv""}]"
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Iceland"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/iceland.csv""}]"
 http://www.hmrc.gov.uk/exrate/indonesia.htm,Foreign Exchange Rates: Indonesia,Historical exchange rates for Indonesia,"# Foreign Exchange Rates: Indonesia
 
 ## Unit of currency: Indonesian Rupiah
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Indonesia"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/indonesia.csv""}]"
+http://www.hmrc.gov.uk/exrate/iran.htm,Foreign Exchange Rates: Iran,Historical exchange rates for Iran,"# Foreign Exchange Rates: Iran
+
+## Unit of currency: Iranian Rial
+
+
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Iran"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/iran.csv""}]"
+http://www.hmrc.gov.uk/exrate/iraq.htm,Foreign Exchange Rates: Iraq,Historical exchange rates for Iraq,"# Foreign Exchange Rates: Iraq
+
+## Unit of currency: Iraqi Dinar
+
+
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Iraq"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/iraq.csv""}]"
 http://www.hmrc.gov.uk/exrate/ireland.htm,Foreign Exchange Rates: Republic of Ireland,Historical exchange rates for Republic of Ireland,"# Foreign Exchange Rates: Republic of Ireland
 
 ## Unit of currency: Irish Punt   Euro From 1.1.02
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Republic of Ireland"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/ireland.csv""}]"
+http://www.hmrc.gov.uk/exrate/italy.htm,Foreign Exchange Rates: Italy,Historical exchange rates for Italy,"# Foreign Exchange Rates: Italy
+
+## Unit of currency: Italian Lira   Euro From 1.1.02
+
+*  The currency was devalued during the period 1.1.92 to 31.3.93
+
+
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Italy"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/italy.csv""}]"
 http://www.hmrc.gov.uk/exrate/israel.htm,Foreign Exchange Rates: Israel,Historical exchange rates for Israel,"# Foreign Exchange Rates: Israel
 
 ## Unit of currency: Shekel
@@ -343,32 +351,24 @@ http://www.hmrc.gov.uk/exrate/jamaica.htm,Foreign Exchange Rates: Jamaica,Histor
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Jamaica"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/jamaica.csv""}]"
-http://www.hmrc.gov.uk/exrate/italy.htm,Foreign Exchange Rates: Italy,Historical exchange rates for Italy,"# Foreign Exchange Rates: Italy
-
-## Unit of currency: Italian Lira   Euro From 1.1.02
-
-*  The currency was devalued during the period 1.1.92 to 31.3.93
-
-
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Italy"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/italy.csv""}]"
-http://www.hmrc.gov.uk/exrate/japan.htm,Foreign Exchange Rates: Japan,Historical exchange rates for Japan,"# Foreign Exchange Rates: Japan
-
-## Unit of currency: Japanese Yen
-
-
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Japan"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/japan.csv""}]"
-http://www.hmrc.gov.uk/exrate/kenya.htm,Foreign Exchange Rates: Kenya,Historical exchange rates for Kenya,"# Foreign Exchange Rates: Kenya
-
-## Unit of currency: Kenya Shilling
-
-
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Kenya"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/kenya.csv""}]"
 http://www.hmrc.gov.uk/exrate/jordan.htm,Foreign Exchange Rates: Jordan,Historical exchange rates for Jordan,"# Foreign Exchange Rates: Jordan
 
 ## Unit of currency: Jordan Dinar
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Jordan"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/jordan.csv""}]"
+http://www.hmrc.gov.uk/exrate/kenya.htm,Foreign Exchange Rates: Kenya,Historical exchange rates for Kenya,"# Foreign Exchange Rates: Kenya
+
+## Unit of currency: Kenya Shilling
+
+
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Kenya"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/kenya.csv""}]"
+http://www.hmrc.gov.uk/exrate/japan.htm,Foreign Exchange Rates: Japan,Historical exchange rates for Japan,"# Foreign Exchange Rates: Japan
+
+## Unit of currency: Japanese Yen
+
+
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Japan"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/japan.csv""}]"
 http://www.hmrc.gov.uk/exrate/south-korea.htm,Foreign Exchange Rates: Korea South,Historical exchange rates for Korea South,"# Foreign Exchange Rates: Korea South
 
 ## Unit of currency: Won
@@ -381,12 +381,6 @@ http://www.hmrc.gov.uk/exrate/kuwait.htm,Foreign Exchange Rates: Kuwait,Historic
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Aug-2014,"","[{""title"":""Foreign Exchange Rates: Kuwait"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/kuwait.csv""}]"
-http://www.hmrc.gov.uk/exrate/lebanon.htm,Foreign Exchange Rates: Lebanon,Historical exchange rates for Lebanon,"# Foreign Exchange Rates: Lebanon
-
-## Unit of currency: Lebanese Pound
-
-
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Lebanon"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/lebanon.csv""}]"
 http://www.hmrc.gov.uk/exrate/laos.htm,Foreign Exchange Rates: Laos,Historical exchange rates for Laos,"# Foreign Exchange Rates: Laos
 
 ## Unit of currency: New Kip
@@ -399,6 +393,12 @@ http://www.hmrc.gov.uk/exrate/latvia.htm,Foreign Exchange Rates: Laos,Historical
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Laos"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/latvia.csv""}]"
+http://www.hmrc.gov.uk/exrate/lebanon.htm,Foreign Exchange Rates: Lebanon,Historical exchange rates for Lebanon,"# Foreign Exchange Rates: Lebanon
+
+## Unit of currency: Lebanese Pound
+
+
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Lebanon"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/lebanon.csv""}]"
 http://www.hmrc.gov.uk/exrate/libya.htm,Foreign Exchange Rates: Libya,Historical exchange rates for Libya,"# Foreign Exchange Rates: Libya
 
 ## Unit of currency: Libyan Dinar
@@ -411,18 +411,18 @@ http://www.hmrc.gov.uk/exrate/lithuania.htm,Foreign Exchange Rates: Lithuania,Hi
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Lithuania"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/lithuania.csv""}]"
-http://www.hmrc.gov.uk/exrate/luxembourg.htm,Foreign Exchange Rates: Luxembourg,Historical exchange rates for Luxembourg,"# Foreign Exchange Rates: Luxembourg
-
-## Unit of currency: Luxembourg Franc   Euro From 1.1.02
-
-
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Luxembourg"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/luxembourg.csv""}]"
 http://www.hmrc.gov.uk/exrate/malawi.htm,Foreign Exchange Rates: Malawi,Historical exchange rates for Malawi,"# Foreign Exchange Rates: Malawi
 
 ## Unit of currency: Malawi Kwacha
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Malawi"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/malawi.csv""}]"
+http://www.hmrc.gov.uk/exrate/luxembourg.htm,Foreign Exchange Rates: Luxembourg,Historical exchange rates for Luxembourg,"# Foreign Exchange Rates: Luxembourg
+
+## Unit of currency: Luxembourg Franc   Euro From 1.1.02
+
+
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Luxembourg"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/luxembourg.csv""}]"
 http://www.hmrc.gov.uk/exrate/malaysia.htm,Foreign Exchange Rates: Malaysia,Historical exchange rates for Malaysia,"# Foreign Exchange Rates: Malaysia
 
 ## Unit of currency: Ringgit
@@ -441,60 +441,60 @@ http://www.hmrc.gov.uk/exrate/mauritius.htm,Foreign Exchange Rates: Mauritius,Hi
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Mauritius"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/mauritius.csv""}]"
-http://www.hmrc.gov.uk/exrate/mexico.htm,Foreign Exchange Rates: Mexico,Historical exchange rates for Mexico,"# Foreign Exchange Rates: Mexico
-
-## Unit of currency: Mexican Peso/Nuevo Peso
-
-
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Mexico"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/mexico.csv""}]"
 http://www.hmrc.gov.uk/exrate/morocco.htm,Foreign Exchange Rates: Morocco,Historical exchange rates for Morocco,"# Foreign Exchange Rates: Morocco
 
 ## Unit of currency: Dirham
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Morocco"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/morocco.csv""}]"
-http://www.hmrc.gov.uk/exrate/netherlands.htm,Foreign Exchange Rates: Netherlands,Historical exchange rates for Netherlands,"# Foreign Exchange Rates: Netherlands
+http://www.hmrc.gov.uk/exrate/mexico.htm,Foreign Exchange Rates: Mexico,Historical exchange rates for Mexico,"# Foreign Exchange Rates: Mexico
 
-## Unit of currency: Neth. Guilder   Euro From 
+## Unit of currency: Mexican Peso/Nuevo Peso
 
 
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Netherlands"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/netherlands.csv""}]"
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Mexico"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/mexico.csv""}]"
 http://www.hmrc.gov.uk/exrate/netherland-antilles.htm,Foreign Exchange Rates: Netherland Antilles,Historical exchange rates for Netherland Antilles,"# Foreign Exchange Rates: Netherland Antilles
 
 ## Unit of currency: Antilles Guilder
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Netherland Antilles"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/netherland-antilles.csv""}]"
-http://www.hmrc.gov.uk/exrate/new-zealand.htm,Foreign Exchange Rates: New Zealand,Historical exchange rates for New Zealand,"# Foreign Exchange Rates: New Zealand
-
-## Unit of currency: Nz Dollar
-
-
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: New Zealand"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/new-zealand.csv""}]"
 http://www.hmrc.gov.uk/exrate/nepal.htm,Foreign Exchange Rates: Nepal,Historical exchange rates for Nepal,"# Foreign Exchange Rates: Nepal
 
 ## Unit of currency: Nepalese Rupee
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Nepal"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/nepal.csv""}]"
+http://www.hmrc.gov.uk/exrate/netherlands.htm,Foreign Exchange Rates: Netherlands,Historical exchange rates for Netherlands,"# Foreign Exchange Rates: Netherlands
+
+## Unit of currency: Neth. Guilder   Euro From 
+
+
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Netherlands"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/netherlands.csv""}]"
+http://www.hmrc.gov.uk/exrate/new-zealand.htm,Foreign Exchange Rates: New Zealand,Historical exchange rates for New Zealand,"# Foreign Exchange Rates: New Zealand
+
+## Unit of currency: Nz Dollar
+
+
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: New Zealand"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/new-zealand.csv""}]"
 http://www.hmrc.gov.uk/exrate/nicaragua.htm,Foreign Exchange Rates: Nicaragua,Historical exchange rates for Nicaragua,"# Foreign Exchange Rates: Nicaragua
 
 ## Unit of currency: Gold Cordoba
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Nicaragua"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/nicaragua.csv""}]"
-http://www.hmrc.gov.uk/exrate/oman.htm,"Foreign Exchange Rates: Oman, Sultanate of","Historical exchange rates for Oman, Sultanate of","# Foreign Exchange Rates: Oman, Sultanate of
-
-## Unit of currency: Rial Omani
-
-
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Oman, Sultanate of"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/oman.csv""}]"
 http://www.hmrc.gov.uk/exrate/norway.htm,Foreign Exchange Rates: Norway,Historical exchange rates for Norway,"# Foreign Exchange Rates: Norway
 
 ## Unit of currency: Norwegian Krone
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Norway"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/norway.csv""}]"
+http://www.hmrc.gov.uk/exrate/oman.htm,"Foreign Exchange Rates: Oman, Sultanate of","Historical exchange rates for Oman, Sultanate of","# Foreign Exchange Rates: Oman, Sultanate of
+
+## Unit of currency: Rial Omani
+
+
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Oman, Sultanate of"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/oman.csv""}]"
 http://www.hmrc.gov.uk/exrate/nigeria.htm,Foreign Exchange Rates: Nigeria,Historical exchange rates for Nigeria,"# Foreign Exchange Rates: Nigeria
 
 ## Unit of currency: Nigerian Naira
@@ -507,6 +507,12 @@ http://www.hmrc.gov.uk/exrate/pakistan.htm,Foreign Exchange Rates: Pakistan,Hist
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Pakistan"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/pakistan.csv""}]"
+http://www.hmrc.gov.uk/exrate/peru.htm,Foreign Exchange Rates: Peru,Historical exchange rates for Peru,"# Foreign Exchange Rates: Peru
+
+## Unit of currency: Inti (New Sol As From 01.01.91)
+
+
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Peru"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/peru.csv""}]"
 http://www.hmrc.gov.uk/exrate/papua-new-guinea.htm,Foreign Exchange Rates: Papua New Guinea,Historical exchange rates for Papua New Guinea,"# Foreign Exchange Rates: Papua New Guinea
 
 ## Unit of currency: Kina
@@ -519,18 +525,6 @@ http://www.hmrc.gov.uk/exrate/paraguay.htm,Foreign Exchange Rates: Paraguay,Hist
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Paraguay"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/paraguay.csv""}]"
-http://www.hmrc.gov.uk/exrate/peru.htm,Foreign Exchange Rates: Peru,Historical exchange rates for Peru,"# Foreign Exchange Rates: Peru
-
-## Unit of currency: Inti (New Sol As From 01.01.91)
-
-
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Peru"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/peru.csv""}]"
-http://www.hmrc.gov.uk/exrate/philippines.htm,Foreign Exchange Rates: Philippines,Historical exchange rates for Philippines,"# Foreign Exchange Rates: Philippines
-
-## Unit of currency: Philippine Peso
-
-
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Philippines"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/philippines.csv""}]"
 http://www.hmrc.gov.uk/exrate/poland.htm,Foreign Exchange Rates: Poland,Historical exchange rates for Poland,"# Foreign Exchange Rates: Poland
 
 ## Unit of currency: Zloty
@@ -543,6 +537,12 @@ http://www.hmrc.gov.uk/exrate/qatar.htm,Foreign Exchange Rates: Qatar,Historical
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Qatar"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/qatar.csv""}]"
+http://www.hmrc.gov.uk/exrate/philippines.htm,Foreign Exchange Rates: Philippines,Historical exchange rates for Philippines,"# Foreign Exchange Rates: Philippines
+
+## Unit of currency: Philippine Peso
+
+
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Philippines"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/philippines.csv""}]"
 http://www.hmrc.gov.uk/exrate/portugal.htm,Foreign Exchange Rates: Portugal,Historical exchange rates for Portugal,"# Foreign Exchange Rates: Portugal
 
 ## Unit of currency: Portuguese Escudo   Euro From 1.1.02
@@ -563,12 +563,6 @@ http://www.hmrc.gov.uk/exrate/portugal.htm,Foreign Exchange Rates: Portugal,Hist
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Portugal"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/portugal.csv""}]"
-http://www.hmrc.gov.uk/exrate/russia.htm,Foreign Exchange Rates: Russia,Historical exchange rates for Russia,"# Foreign Exchange Rates: Russia
-
-## Unit of currency: Roulble (Market)
-
-
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Russia"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/russia.csv""}]"
 http://www.hmrc.gov.uk/exrate/romania.htm,Foreign Exchange Rates: Romania,Historical exchange rates for Romania,"# Foreign Exchange Rates: Romania
 
 ## Unit of currency: Leu
@@ -581,42 +575,48 @@ http://www.hmrc.gov.uk/exrate/saudi-arabia.htm,Foreign Exchange Rates: Saudi Ara
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Saudi Arabia"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/saudi-arabia.csv""}]"
-http://www.hmrc.gov.uk/exrate/rwanda.htm,Foreign Exchange Rates: Rwanda,Historical exchange rates for Rwanda,"# Foreign Exchange Rates: Rwanda
+http://www.hmrc.gov.uk/exrate/russia.htm,Foreign Exchange Rates: Russia,Historical exchange rates for Russia,"# Foreign Exchange Rates: Russia
 
-## Unit of currency: Rwanda Franc
+## Unit of currency: Roulble (Market)
 
 
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Rwanda"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/rwanda.csv""}]"
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Russia"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/russia.csv""}]"
 http://www.hmrc.gov.uk/exrate/seychelles.htm,Foreign Exchange Rates: Seychelles,Historical exchange rates for Seychelles,"# Foreign Exchange Rates: Seychelles
 
 ## Unit of currency: Seychelles Rupee
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Seychelles"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/seychelles.csv""}]"
-http://www.hmrc.gov.uk/exrate/slovakia.htm,Foreign Exchange Rates: Laos,Historical exchange rates for Laos,"# Foreign Exchange Rates: Laos
+http://www.hmrc.gov.uk/exrate/rwanda.htm,Foreign Exchange Rates: Rwanda,Historical exchange rates for Rwanda,"# Foreign Exchange Rates: Rwanda
 
-## Unit of currency: Koruna   Euro From 1.1.09
-
-
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Laos"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/slovakia.csv""}]"
-http://www.hmrc.gov.uk/exrate/sierra-leone.htm,Foreign Exchange Rates: Sierra Leone,Historical exchange rates for Sierra Leone,"# Foreign Exchange Rates: Sierra Leone
-
-## Unit of currency: Sierra Leone Leone
+## Unit of currency: Rwanda Franc
 
 
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Sierra Leone"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/sierra-leone.csv""}]"
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Rwanda"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/rwanda.csv""}]"
 http://www.hmrc.gov.uk/exrate/singapore.htm,Foreign Exchange Rates: Singapore,Historical exchange rates for Singapore,"# Foreign Exchange Rates: Singapore
 
 ## Unit of currency: Singapore Dollar
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Singapore"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/singapore.csv""}]"
+http://www.hmrc.gov.uk/exrate/slovakia.htm,Foreign Exchange Rates: Laos,Historical exchange rates for Laos,"# Foreign Exchange Rates: Laos
+
+## Unit of currency: Koruna   Euro From 1.1.09
+
+
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Laos"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/slovakia.csv""}]"
 http://www.hmrc.gov.uk/exrate/solomon-islands.htm,Foreign Exchange Rates: Solomon Islands,Historical exchange rates for Solomon Islands,"# Foreign Exchange Rates: Solomon Islands
 
 ## Unit of currency: Solomon Islands Dollar
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Solomon Islands"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/solomon-islands.csv""}]"
+http://www.hmrc.gov.uk/exrate/sierra-leone.htm,Foreign Exchange Rates: Sierra Leone,Historical exchange rates for Sierra Leone,"# Foreign Exchange Rates: Sierra Leone
+
+## Unit of currency: Sierra Leone Leone
+
+
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Sierra Leone"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/sierra-leone.csv""}]"
 http://www.hmrc.gov.uk/exrate/spain.htm,Foreign Exchange Rates: Spain Balearic Isles,Historical exchange rates for Spain Balearic Isles,"# Foreign Exchange Rates: Spain Balearic Isles
 
 ## Unit of currency: Peseta
@@ -625,36 +625,42 @@ http://www.hmrc.gov.uk/exrate/spain.htm,Foreign Exchange Rates: Spain Balearic I
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Spain Balearic Isles"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/spain.csv""}]"
-http://www.hmrc.gov.uk/exrate/south-africa.htm,Foreign Exchange Rates: South Africa,Historical exchange rates for South Africa,"# Foreign Exchange Rates: South Africa
-
-## Unit of currency: South African Rand (Commercial Rate)
-
-
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: South Africa"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/south-africa.csv""}]"
-http://www.hmrc.gov.uk/exrate/somali-republic.htm,Foreign Exchange Rates: Somali Republic,Historical exchange rates for Somali Republic,"# Foreign Exchange Rates: Somali Republic
-
-## Unit of currency: Somali Shilling
-
-
-",hm-revenue-customs,hmrc-exchange-rates,12-Apr-2011,"","[{""title"":""Foreign Exchange Rates: Somali Republic"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/somali-republic.csv""}]"
 http://www.hmrc.gov.uk/exrate/sri-lanka.htm,Foreign Exchange Rates: Sri Lanka,Historical exchange rates for Sri Lanka,"# Foreign Exchange Rates: Sri Lanka
 
 ## Unit of currency: Sri Lanka Rupee
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Sri Lanka"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/sri-lanka.csv""}]"
-http://www.hmrc.gov.uk/exrate/surinam.htm,Foreign Exchange Rates: Surinam,Historical exchange rates for Surinam,"# Foreign Exchange Rates: Surinam
+http://www.hmrc.gov.uk/exrate/somali-republic.htm,Foreign Exchange Rates: Somali Republic,Historical exchange rates for Somali Republic,"# Foreign Exchange Rates: Somali Republic
 
-## Unit of currency: Surinam Guilder
+## Unit of currency: Somali Shilling
 
 
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Surinam"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/surinam.csv""}]"
+",hm-revenue-customs,hmrc-exchange-rates,12-Apr-2011,"","[{""title"":""Foreign Exchange Rates: Somali Republic"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/somali-republic.csv""}]"
+http://www.hmrc.gov.uk/exrate/south-africa.htm,Foreign Exchange Rates: South Africa,Historical exchange rates for South Africa,"# Foreign Exchange Rates: South Africa
+
+## Unit of currency: South African Rand (Commercial Rate)
+
+
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: South Africa"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/south-africa.csv""}]"
 http://www.hmrc.gov.uk/exrate/swaziland.htm,Foreign Exchange Rates: Swaziland,Historical exchange rates for Swaziland,"# Foreign Exchange Rates: Swaziland
 
 ## Unit of currency: Lilangeli
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Swaziland"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/swaziland.csv""}]"
+http://www.hmrc.gov.uk/exrate/sweden.htm,Foreign Exchange Rates: Sweden,Historical exchange rates for Sweden,"# Foreign Exchange Rates: Sweden
+
+## Unit of currency: Swedish Krona
+
+
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Sweden"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/sweden.csv""}]"
+http://www.hmrc.gov.uk/exrate/surinam.htm,Foreign Exchange Rates: Surinam,Historical exchange rates for Surinam,"# Foreign Exchange Rates: Surinam
+
+## Unit of currency: Surinam Guilder
+
+
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Surinam"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/surinam.csv""}]"
 http://www.hmrc.gov.uk/exrate/sudan.htm,Foreign Exchange Rates: Sudan,Historical exchange rates for Sudan,"# Foreign Exchange Rates: Sudan
 
 ## Unit of currency: Sudanese Pound(From 01.07.07)/(Sudanese Dinar From 08.06.92 
@@ -667,6 +673,12 @@ http://www.hmrc.gov.uk/exrate/switzerland.htm,Foreign Exchange Rates: Switzerlan
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Switzerland"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/switzerland.csv""}]"
+http://www.hmrc.gov.uk/exrate/tanzania.htm,Foreign Exchange Rates: Tanzania,Historical exchange rates for Tanzania,"# Foreign Exchange Rates: Tanzania
+
+## Unit of currency: Tanzanian Shilling
+
+
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Tanzania"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/tanzania.csv""}]"
 http://www.hmrc.gov.uk/exrate/syria.htm,Foreign Exchange Rates: Syria,Historical exchange rates for Syria,"# Foreign Exchange Rates: Syria
 
 ## Unit of currency: Syrian Pound
@@ -679,24 +691,6 @@ http://www.hmrc.gov.uk/exrate/taiwan.htm,Foreign Exchange Rates: Taiwan,Historic
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Taiwan"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/taiwan.csv""}]"
-http://www.hmrc.gov.uk/exrate/sweden.htm,Foreign Exchange Rates: Sweden,Historical exchange rates for Sweden,"# Foreign Exchange Rates: Sweden
-
-## Unit of currency: Swedish Krona
-
-
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Sweden"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/sweden.csv""}]"
-http://www.hmrc.gov.uk/exrate/thailand.htm,Foreign Exchange Rates: Thailand,Historical exchange rates for Thailand,"# Foreign Exchange Rates: Thailand
-
-## Unit of currency: Thai Baht
-
-
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Thailand"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/thailand.csv""}]"
-http://www.hmrc.gov.uk/exrate/tanzania.htm,Foreign Exchange Rates: Tanzania,Historical exchange rates for Tanzania,"# Foreign Exchange Rates: Tanzania
-
-## Unit of currency: Tanzanian Shilling
-
-
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Tanzania"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/tanzania.csv""}]"
 http://www.hmrc.gov.uk/exrate/tonga-islands.htm,Foreign Exchange Rates: Tonga Islands,Historical exchange rates for Tonga Islands,"# Foreign Exchange Rates: Tonga Islands
 
 ## Unit of currency: Pa Anga
@@ -709,66 +703,72 @@ http://www.hmrc.gov.uk/exrate/trinidad-tobago.htm,Foreign Exchange Rates: Trinid
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Trinidad & Tobago"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/trinidad-tobago.csv""}]"
-http://www.hmrc.gov.uk/exrate/turkey.htm,Foreign Exchange Rates: Turkey,Historical exchange rates for Turkey,"# Foreign Exchange Rates: Turkey
+http://www.hmrc.gov.uk/exrate/thailand.htm,Foreign Exchange Rates: Thailand,Historical exchange rates for Thailand,"# Foreign Exchange Rates: Thailand
 
-## Unit of currency: Turkish Lira
-
-
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Turkey"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/turkey.csv""}]"
-http://www.hmrc.gov.uk/exrate/uganda.htm,Foreign Exchange Rates: Uganda,Historical exchange rates for Uganda,"# Foreign Exchange Rates: Uganda
-
-## Unit of currency: Ugandan New Shilling
+## Unit of currency: Thai Baht
 
 
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Uganda"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/uganda.csv""}]"
-http://www.hmrc.gov.uk/exrate/uae.htm,Foreign Exchange Rates: United Arab Emirates,Historical exchange rates for United Arab Emirates,"# Foreign Exchange Rates: United Arab Emirates
-
-## Unit of currency: U.A.E. Dirham
-
-
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: United Arab Emirates"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/uae.csv""}]"
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Thailand"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/thailand.csv""}]"
 http://www.hmrc.gov.uk/exrate/tunisia.htm,Foreign Exchange Rates: Tunisia,Historical exchange rates for Tunisia,"# Foreign Exchange Rates: Tunisia
 
 ## Unit of currency: Tunisian Dinar
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Tunisia"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/tunisia.csv""}]"
+http://www.hmrc.gov.uk/exrate/turkey.htm,Foreign Exchange Rates: Turkey,Historical exchange rates for Turkey,"# Foreign Exchange Rates: Turkey
+
+## Unit of currency: Turkish Lira
+
+
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Turkey"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/turkey.csv""}]"
+http://www.hmrc.gov.uk/exrate/uae.htm,Foreign Exchange Rates: United Arab Emirates,Historical exchange rates for United Arab Emirates,"# Foreign Exchange Rates: United Arab Emirates
+
+## Unit of currency: U.A.E. Dirham
+
+
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: United Arab Emirates"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/uae.csv""}]"
+http://www.hmrc.gov.uk/exrate/uganda.htm,Foreign Exchange Rates: Uganda,Historical exchange rates for Uganda,"# Foreign Exchange Rates: Uganda
+
+## Unit of currency: Ugandan New Shilling
+
+
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Uganda"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/uganda.csv""}]"
 http://www.hmrc.gov.uk/exrate/uruguay.htm,Foreign Exchange Rates: Uruguay,Historical exchange rates for Uruguay,"# Foreign Exchange Rates: Uruguay
 
 ## Unit of currency: Uruguayan New Peso/Peso Uruguayo (From 1.3.93)
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Uruguay"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/uruguay.csv""}]"
-http://www.hmrc.gov.uk/exrate/venezuela.htm,Foreign Exchange Rates: Venezuela,Historical exchange rates for Venezuela,"# Foreign Exchange Rates: Venezuela
-
-## Unit of currency: Venezuelan Bolivar
-
-
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Venezuela"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/venezuela.csv""}]"
-http://www.hmrc.gov.uk/exrate/vietnam.htm,Foreign Exchange Rates: Vietnam,Historical exchange rates for Vietnam,"# Foreign Exchange Rates: Vietnam
-
-## Unit of currency: Dong
-
-
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Vietnam"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/vietnam.csv""}]"
 http://www.hmrc.gov.uk/exrate/usa.htm,Foreign Exchange Rates: USA,Historical exchange rates for USA,"# Foreign Exchange Rates: USA
 
 ## Unit of currency: Us Dollar
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: USA"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/usa.csv""}]"
-http://www.hmrc.gov.uk/exrate/yemen.htm,Foreign Exchange Rates: Yemen,Historical exchange rates for Yemen,"# Foreign Exchange Rates: Yemen
+http://www.hmrc.gov.uk/exrate/venezuela.htm,Foreign Exchange Rates: Venezuela,Historical exchange rates for Venezuela,"# Foreign Exchange Rates: Venezuela
 
-## Unit of currency: Rial (Official Rate) Rial (Free Rate)
+## Unit of currency: Venezuelan Bolivar
 
 
-",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Yemen"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/yemen.csv""}]"
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Venezuela"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/venezuela.csv""}]"
 http://www.hmrc.gov.uk/exrate/zambia.htm,Foreign Exchange Rates: Zambia,Historical exchange rates for Zambia,"# Foreign Exchange Rates: Zambia
 
 ## Unit of currency: Zambian Kwacha
 
 
 ",hm-revenue-customs,hmrc-exchange-rates,16-May-2014,"","[{""title"":""Foreign Exchange Rates: Zambia"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/zambia.csv""}]"
+http://www.hmrc.gov.uk/exrate/vietnam.htm,Foreign Exchange Rates: Vietnam,Historical exchange rates for Vietnam,"# Foreign Exchange Rates: Vietnam
+
+## Unit of currency: Dong
+
+
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Vietnam"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/vietnam.csv""}]"
+http://www.hmrc.gov.uk/exrate/yemen.htm,Foreign Exchange Rates: Yemen,Historical exchange rates for Yemen,"# Foreign Exchange Rates: Yemen
+
+## Unit of currency: Rial (Official Rate) Rial (Free Rate)
+
+
+",hm-revenue-customs,hmrc-exchange-rates,08-Apr-2014,"","[{""title"":""Foreign Exchange Rates: Yemen"",""link"":""https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/yemen.csv""}]"
 http://www.hmrc.gov.uk/exrate/zimbabwe.htm,Foreign Exchange Rates: Zimbabwe,Historical exchange rates for Zimbabwe,"# Foreign Exchange Rates: Zimbabwe
 
 ## Unit of currency: Zimbabwe Dollar
