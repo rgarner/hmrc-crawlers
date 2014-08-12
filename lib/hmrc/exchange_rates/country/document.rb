@@ -26,7 +26,7 @@ module Hmrc
           ).to_kramdown.gsub(/\{:.+?}/m, '')
         end
 
-        def markdown
+        def body
           <<-MARKDOWN
 # #{title}
 

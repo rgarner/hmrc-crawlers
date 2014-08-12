@@ -33,7 +33,7 @@ describe Hmrc::ExchangeRates::Country::Document do
       end
 
       describe 'the markdown' do
-        subject { doc.markdown }
+        subject { doc.body }
 
         it { should include('# Foreign Exchange Rates: Algeria') }
         it { should include('## Unit of currency: Algerian Dinar') }
@@ -58,7 +58,7 @@ describe Hmrc::ExchangeRates::Country::Document do
       end
 
       describe 'the markdown' do
-        subject(:markdown_lines) { doc.markdown.split("\n") }
+        subject(:markdown_lines) { doc.body.split("\n") }
 
         it { should include('# Foreign Exchange Rates: CIS: Russia') }
         it { should include('## Unit of currency: Rouble (Official/Floating)') }
