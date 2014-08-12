@@ -29,11 +29,11 @@ module Hmrc
       end
 
       def name
-        @_name ||= begin
-          title_text = doc.at_css('title').text
-          /exchange rates:\s*(?<parsed_name>.*)/m =~ title_text
+        @_name ||= ['title', '#centre_col h1'].map do |possible_title|
+          text = doc.at_css(possible_title)
+          text && (/exchange rates:\s*(?<parsed_name>.*)/m =~ text)
           parsed_name
-        end
+        end.compact.first
       end
 
       def currency

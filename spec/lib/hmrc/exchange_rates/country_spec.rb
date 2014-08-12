@@ -163,6 +163,12 @@ describe Country do
           end
         end
       end
+
+      context 'Brunei (broken title)' do
+        let(:country_name) { 'brunei' }
+
+        its(:name) { should == 'Brunei' }
+      end
     end
   end
 end
