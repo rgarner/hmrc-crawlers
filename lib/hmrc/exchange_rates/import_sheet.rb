@@ -33,12 +33,12 @@ module Hmrc
           'hm-revenue-customs',
           country.issued.strftime('%d-%b-%Y'),
           '',
-          JSON.dump(
+          JSON.dump([
             {
               title: country.document.title,
               url: "https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/#{country.basename}.csv"
             }
-          )
+          ])
         ]
       end
 

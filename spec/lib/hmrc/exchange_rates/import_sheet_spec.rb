@@ -49,7 +49,7 @@ describe ImportSheet do
         its([5]) { should == '08-Apr-2014' }
         its([6]) { should == '' }
         describe 'the JSON attachments' do
-          subject { JSON.parse(row[7], symbolize_names: true) }
+          subject { JSON.parse(row[7], symbolize_names: true).first }
 
           its([:title]) { should == country.document.title }
           its([:url])   { should ==
