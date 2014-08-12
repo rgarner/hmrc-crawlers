@@ -28,7 +28,8 @@ describe Hmrc::ExchangeRates::Country::Document do
       end
 
       describe 'the metadata' do
-        its(:title) { should == 'Foreign Exchange Rates: Algeria' }
+        its(:title)   { should == 'Foreign Exchange Rates: Algeria' }
+        its(:summary) { should == 'Historical exchange rates for Algeria' }
       end
 
       describe 'the markdown' do

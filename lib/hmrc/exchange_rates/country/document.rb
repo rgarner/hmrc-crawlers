@@ -15,6 +15,10 @@ module Hmrc
           "Foreign Exchange Rates: #{country.name}"
         end
 
+        def summary
+          "Historical exchange rates for #{country.name}"
+        end
+
         def extra_markdown
           @_extra_markdown ||= country.extra_markup && Kramdown::Document.new(
             country.extra_markup,
