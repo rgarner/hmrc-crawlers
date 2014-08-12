@@ -31,7 +31,7 @@ Anemone.crawl(File.join(Hmrc::ExchangeRates::BASE_URL, 'index.htm')) do |crawl|
   crawl.focus_crawl do |page|
     page.doc.css('#country option').map do |option|
       URI(File.join(Hmrc::ExchangeRates::BASE_URL, option['value']))
-    end
+    end.uniq
   end
 end
 
