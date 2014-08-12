@@ -12,9 +12,6 @@ def create_or_update_content_for(page)
     File.open(base_filename + 'csv', 'w') do |f|
       f.write(country.to_csv)
     end
-    File.open(base_filename + 'md',  'w') do |f|
-      f.write(country.document.body)
-    end
   end
 end
 
@@ -27,7 +24,7 @@ Anemone.crawl(File.join(Hmrc::ExchangeRates::BASE_URL, 'index.htm')) do |crawl|
     puts page.url
     unless page.url.to_s =~ Hmrc::ExchangeRates::INDEX_PAGE
       country = create_or_update_content_for(page)
-      import_sheet.add_country(country)
+      import_sheet.add_country(page.url.to_s, country)
     end
   end
 
