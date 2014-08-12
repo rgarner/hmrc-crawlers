@@ -9,6 +9,9 @@ module Hmrc
       attr_reader :doc
 
       def initialize(doc)
+        raise ArgumentError, 'Country.new requires an HTML document' \
+          unless doc.kind_of?(Nokogiri::HTML::Document)
+
         @doc = doc
       end
 
@@ -55,13 +58,6 @@ module Hmrc
             csv << row
           end
         end
-      end
-
-      def self.parse(doc)
-        raise ArgumentError, 'Country.parse requires an HTML document' \
-          unless doc.kind_of?(Nokogiri::HTML::Document)
-
-        Country.new(doc)
       end
     end
   end

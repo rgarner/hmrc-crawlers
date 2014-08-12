@@ -11,14 +11,14 @@ describe Country do
   describe '.parse' do
     context 'when the input is bad' do
       it 'requires a Nokogiri element' do
-        expect { Country.parse(1) }.to raise_error(
+        expect { Country.new(1) }.to raise_error(
                                          ArgumentError, /requires an HTML document/)
       end
     end
 
     context 'when the input is good' do
       subject(:country) do
-        Country.parse(
+        Country.new(
           Nokogiri::HTML(
             File.read("spec/fixtures/exchange_rates/#{country_name}.html")
           )

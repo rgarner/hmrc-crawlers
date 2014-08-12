@@ -11,7 +11,7 @@ def create_or_update_content_for(page)
     File.join('results', File.basename(page.url.to_s, 'htm')) + 'csv',
     'w'
   ) do |f|
-    f.write(Hmrc::ExchangeRates::Country.parse(page.doc).to_csv)
+    f.write(Hmrc::ExchangeRates::Country.new(page.doc).to_csv)
   end
 end
 

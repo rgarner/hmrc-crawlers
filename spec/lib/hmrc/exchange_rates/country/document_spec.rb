@@ -13,7 +13,7 @@ describe Hmrc::ExchangeRates::Country::Document do
     subject(:doc) { Hmrc::ExchangeRates::Country::Document.new(country) }
 
     let(:country) do
-      Hmrc::ExchangeRates::Country.parse(
+      Hmrc::ExchangeRates::Country.new(
         Nokogiri::HTML(
           File.read("spec/fixtures/exchange_rates/#{country_name}.html")
         )
