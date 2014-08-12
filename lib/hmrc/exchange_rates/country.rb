@@ -7,13 +7,14 @@ require 'hmrc/exchange_rates/country/document'
 module Hmrc
   module ExchangeRates
     class Country
-      attr_reader :doc
+      attr_reader :doc, :original_url
 
-      def initialize(doc)
+      def initialize(doc, original_url = 'http://example.com')
         raise ArgumentError, 'Country.new requires an HTML document' \
           unless doc.kind_of?(Nokogiri::HTML::Document)
 
-        @doc = doc
+        @doc          = doc
+        @original_url = original_url
       end
 
       def document

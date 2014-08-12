@@ -6,7 +6,7 @@ require 'anemone'
 require 'hmrc/exchange_rates'
 
 def create_or_update_content_for(page)
-  Hmrc::ExchangeRates::Country.new(page.doc).tap do |country|
+  Hmrc::ExchangeRates::Country.new(page.doc, page.url.to_s).tap do |country|
     base_filename = File.join('results', File.basename(page.url.to_s, 'htm'))
 
     File.open(base_filename + 'csv', 'w') do |f|

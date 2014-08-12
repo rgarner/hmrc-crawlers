@@ -19,9 +19,8 @@ describe Country do
     context 'when the input is good' do
       subject(:country) do
         Country.new(
-          Nokogiri::HTML(
-            File.read("spec/fixtures/exchange_rates/#{country_name}.html")
-          )
+          Nokogiri::HTML(File.read("spec/fixtures/exchange_rates/#{country_name}.html")),
+          "http://example.com/#{country_name}.htm"
         )
       end
 
@@ -31,6 +30,7 @@ describe Country do
         its(:name)            { should == 'Algeria' }
         its(:currency)        { should == 'Algerian Dinar' }
         its(:issued)          { should == Date.new(2014, 4, 8) }
+        its(:original_url)    { should == 'http://example.com/algeria.htm'}
 
         describe 'its rows' do
           subject (:rows) { country.rows }
