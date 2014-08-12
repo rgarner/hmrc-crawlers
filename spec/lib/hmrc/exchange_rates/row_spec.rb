@@ -23,7 +23,7 @@ describe Row do
       its(:currency_per)   { should == '2.1975' }
 
       it 'transforms back to array with YYYY-MM-DD dates' do
-        row.to_a.should == ['1999-03-31', '0.45506', '2.1975']
+        row.to_a.should == ['Average', '1998-03-31', '1999-03-31', '0.45506', '2.1975']
       end
     end
 
@@ -37,7 +37,7 @@ describe Row do
       its(:sterling_value) { should == '0.0156146' }
       its(:currency_per)   { should == '64.0424' }
 
-      its(:to_a) { should == ['1994-04-15 to 1995-03-31', '0.0156146', '64.0424']}
+      its(:to_a) { should == ['Average', '1994-04-15', '1995-03-31', '0.0156146', '64.0424']}
     end
 
     context 'the French problem' do
@@ -49,7 +49,7 @@ describe Row do
 
       its(:sterling_value) { should == '0.0941256201' }
       its(:currency_per)   { should == '10.6241' }
-      its(:to_a)      { should == ['2001-04-01 to 2002-02-27', '0.0941256201', '10.6241']}
+      its(:to_a)      { should == ['Average', '2001-04-01', '2002-02-27', '0.0941256201', '10.6241']}
     end
 
     context 'whitespace all over the shop' do
@@ -61,7 +61,7 @@ describe Row do
 
       its(:sterling_value) { should == '0.0941256201' }
       its(:currency_per)   { should == '10.6241' }
-      its(:to_a)      { should == ['2001-04-01 to 2002-02-27', '0.0941256201', '10.6241']}
+      its(:to_a)      { should == ['Average', '2001-04-01', '2002-02-27', '0.0941256201', '10.6241']}
     end
   end
 end

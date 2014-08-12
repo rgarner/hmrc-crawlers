@@ -1,11 +1,12 @@
 require 'hmrc/exchange_rates/date_range'
 require 'forwardable'
+require 'active_support/core_ext/string/inflections'
 
 module Hmrc
   module ExchangeRates
     class Row
       extend Forwardable
-      def_delegators :date_range, :from_date, :to_date
+      def_delegators :date_range, :from_date, :to_date, :type
 
       attr_accessor :row
       def initialize(row)
@@ -27,7 +28,9 @@ module Hmrc
 
       def to_a
         [
-          date_range.to_s,
+          type.to_s.titleize,
+          date_range.format(:from_date),
+          date_range.format(:to_date),
           sterling_value,
           currency_per
         ]

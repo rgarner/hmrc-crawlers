@@ -19,7 +19,6 @@ describe Csv::Table do
 
         it 'nils all properties' do
           table.caption.should be_nil
-          table.header.should be_nil
           table.should have(0).rows
         end
       end
@@ -57,9 +56,7 @@ describe Csv::Table do
         end
 
         it 'has a header' do
-          table.header.should == [
-            'Average for year to', 'Sterling value of currency unit - £', 'Currency units per £1'
-          ]
+          table.header.should == Csv::Table::HEADER
         end
 
         it 'has only the data in rows, no header or caption' do
@@ -78,7 +75,7 @@ describe Csv::Table do
           HTML
         end
 
-        its(:header)  { should be_nil }
+        its(:header)  { should == Csv::Table::HEADER }
         its(:caption) { should be_nil }
 
         it { should have(0).rows }
@@ -114,9 +111,7 @@ describe Csv::Table do
         end
 
         it 'ignores what is there and constructs a header' do
-          table.header.should == [
-            'Average for year to', 'Sterling value of currency unit - £', 'Currency units per £1'
-          ]
+          table.header.should == Csv::Table::HEADER
         end
 
         it 'only has the data in rows, not the pseudo-caption or pseudo-header' do
@@ -152,9 +147,7 @@ describe Csv::Table do
         end
 
         it 'ignores what is there and constructs a header' do
-          table.header.should == [
-            'Average for year to', 'Sterling value of currency unit - £', 'Currency units per £1'
-          ]
+          table.header.should == Csv::Table::HEADER
         end
 
         it 'only has the data in rows, not the pseudo-caption or pseudo-header' do

@@ -29,7 +29,7 @@ module Hmrc
       end
 
       def type
-        @type || :average_for_year_to
+        @type || :average
       end
 
       def zero_fill(str)

@@ -14,14 +14,10 @@ module Csv
                end
     end
 
+    HEADER = ['Type', 'From date', 'To date', 'Sterling value of currency unit - £', 'Currency units per £1']
+
     def header
-      header_row = @table.at_xpath('tr[th]')
-      if header_row
-        header_row.xpath('th').map(&:content)
-      else
-        header_row = @table.at_xpath('tr[td[p[@align="center"]]]')
-        header_row && ['Average for year to', 'Sterling value of currency unit - £', 'Currency units per £1']
-      end
+      HEADER
     end
 
     def caption
