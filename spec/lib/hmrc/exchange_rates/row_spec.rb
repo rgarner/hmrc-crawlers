@@ -36,11 +36,15 @@ describe Row do
     end
 
     context 'when the Euro date has been passed' do
-      let(:array)     { %w(31.03.02 0.45506 2.1975) }
+      let(:array)     {[
+        'Euro from 1. 1.02 to 28. 3.02',
+        '0.6148548942',
+        '1.6264 (Euro)'
+      ]}
       let(:euro_date) { Date.new(2001, 1, 1) }
 
-      it 'sets the currency appropriately' do
-        row.to_a.should == ['Average', '2001-03-31', '2002-03-31', '0.45506', '2.1975', 'Euro']
+      it 'sets the currency appropriately and strips trailing (Euro)' do
+        row.to_a.should == ['Average', '2002-01-01', '2002-03-28', '0.6148548942', '1.6264', 'Euro']
       end
     end
 

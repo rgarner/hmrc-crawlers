@@ -25,7 +25,7 @@ module Hmrc
       end
 
       def currency_per
-        row[2].strip
+        row[2].sub('(Euro)', '').strip
       end
 
       def to_a
