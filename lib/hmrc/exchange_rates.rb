@@ -1,4 +1,5 @@
 require 'hmrc/exchange_rates/country'
+require 'hmrc/exchange_rates/import_sheet'
 
 module Hmrc
   module ExchangeRates
