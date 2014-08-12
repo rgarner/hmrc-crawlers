@@ -28,8 +28,9 @@ describe Country do
       context 'Algeria' do
         let(:country_name) { 'algeria' }
 
-        its(:name) { should == 'Algeria' }
-        its(:currency) { should == 'Algerian Dinar' }
+        its(:name)            { should == 'Algeria' }
+        its(:currency)        { should == 'Algerian Dinar' }
+        its(:issued)          { should == Date.new(2014, 4, 8) }
 
         describe 'its rows' do
           subject (:rows) { country.rows }
@@ -79,6 +80,8 @@ describe Country do
 
       context 'France' do
         let(:country_name) { 'france' }
+
+        its(:issued) { should == Date.new(2014, 4, 8) }
 
         it 'finds the table within the table' do
           country.table_node['width'].should == '589'

@@ -43,6 +43,13 @@ module Hmrc
         end
       end
 
+      def issued
+        @_issued ||= begin
+          iso8601 = doc.at_xpath('//meta[@name="DCTERMS.issued"]')['content']
+          iso8601 && Date.strptime(iso8601, '%Y-%m-%d')
+        end
+      end
+
       def extra_markup
         doc.xpath('//div[@id="centre_col"]//table//ul').to_html
       end
