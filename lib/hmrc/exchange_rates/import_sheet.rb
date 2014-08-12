@@ -11,6 +11,7 @@ module Hmrc
         'summary',
         'body',
         'organisation',
+        'document_collection_1',
         'first_published',
         'publication_type',
         'json_attachments'
@@ -31,6 +32,7 @@ module Hmrc
           country.document.summary,
           country.document.body,
           'hm-revenue-customs',
+          'hmrc-exchange-rates',
           country.issued.strftime('%d-%b-%Y'),
           '',
           JSON.dump([

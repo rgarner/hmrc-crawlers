@@ -14,6 +14,7 @@ describe ImportSheet do
       'summary',
       'body',
       'organisation',
+      'document_collection_1',
       'first_published',
       'publication_type',
       'json_attachments'
@@ -46,10 +47,11 @@ describe ImportSheet do
         its([2]) { should == 'Historical exchange rates for CIS: Russia' }
         its([3]) { should include '*  CIS: the official rate ceased to be quoted from 31 March 1996.' }
         its([4]) { should == 'hm-revenue-customs' }
-        its([5]) { should == '08-Apr-2014' }
-        its([6]) { should == '' }
+        its([5]) { should == 'hmrc-exchange-rates' }
+        its([6]) { should == '08-Apr-2014' }
+        its([7]) { should == '' }
         describe 'the JSON attachments' do
-          subject { JSON.parse(row[7], symbolize_names: true).first }
+          subject { JSON.parse(row[8], symbolize_names: true).first }
 
           its([:title]) { should == country.document.title }
           its([:url])   { should ==
