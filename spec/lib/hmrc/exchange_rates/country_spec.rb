@@ -57,6 +57,13 @@ describe Country do
           end
         end
 
+        describe 'its document' do
+          subject(:document) { country.document }
+
+          it { should be_a(Hmrc::ExchangeRates::Country::Document) }
+        end
+
+
         describe 'its to_csv' do
           subject(:to_csv) { country.to_csv }
 

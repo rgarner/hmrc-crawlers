@@ -2,6 +2,7 @@ require 'csv/table'
 require 'hmrc/exchange_rates/row'
 require 'csv'
 require 'active_support/core_ext/string/inflections'
+require 'hmrc/exchange_rates/country/document'
 
 module Hmrc
   module ExchangeRates
@@ -13,6 +14,10 @@ module Hmrc
           unless doc.kind_of?(Nokogiri::HTML::Document)
 
         @doc = doc
+      end
+
+      def document
+        @_document ||= Hmrc::ExchangeRates::Country::Document.new(self)
       end
 
       def table
