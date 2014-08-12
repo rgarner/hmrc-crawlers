@@ -106,9 +106,14 @@ module Hmrc
         @_to_date ||= parse_date(to_date_str)
       end
 
+      def format(date_sym)
+        date_value = (send date_sym)
+        date_value && date_value.strftime(DATE_OUT_FORMAT)
+      end
+
       def to_s
         dates = from_date_str && !@spot_date ? [:from_date, :to_date] : [:to_date]
-        dates.map {|d| (send d).strftime(DATE_OUT_FORMAT)}.join(' to ')
+        dates.map { |date| format(date) }.join(' to ')
       end
     end
   end

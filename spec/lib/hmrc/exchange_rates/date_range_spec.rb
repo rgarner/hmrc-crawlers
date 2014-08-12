@@ -29,6 +29,9 @@ describe DateRange do
     its(:type)      { should == :spot}
     its(:to_date)   { should == Date.new(1994, 3, 30) }
     its(:from_date) { should be_nil }
+    it 'should not try to format the from date' do
+      range.format(:from_date).should be_nil
+    end
   end
 
   context 'when a range of dates' do
@@ -37,6 +40,13 @@ describe DateRange do
     its(:type)      { should == :average_for_year_to }
     its(:from_date) { should == Date.new(1994, 4, 15) }
     its(:to_date)   { should == Date.new(1995, 3, 31) }
+
+    it 'can format the from date' do
+      range.format(:from_date).should == '1994-04-15'
+    end
+    it 'can format the to date' do
+      range.format(:to_date).should == '1995-03-31'
+    end
   end
 
   context 'when a Euro range of dates' do
