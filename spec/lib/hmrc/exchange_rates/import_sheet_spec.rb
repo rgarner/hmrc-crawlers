@@ -1,6 +1,7 @@
 require 'spec_helper'
 require 'hmrc/exchange_rates/import_sheet'
 require 'hmrc/exchange_rates/country'
+require 'json'
 
 ImportSheet = Hmrc::ExchangeRates::ImportSheet
 
@@ -28,7 +29,8 @@ describe ImportSheet do
       let(:url) { 'http://example.com/1' }
       let(:country) do
         Hmrc::ExchangeRates::Country.new(
-          Nokogiri::HTML(File.read('spec/fixtures/exchange_rates/cis_russia.html'))
+          Nokogiri::HTML(File.read('spec/fixtures/exchange_rates/cis_russia.html')),
+          'http://example.com/cis-russia.htm'
         )
       end
 
@@ -38,7 +40,7 @@ describe ImportSheet do
 
       it { should have(1).row }
       describe 'the row' do
-        subject { sheet.rows.first }
+        subject(:row) { sheet.rows.first }
         its([0]) { should == url }
         its([1]) { should == 'Foreign Exchange Rates: CIS: Russia' }
         its([2]) { should == 'Historical exchange rates for CIS: Russia' }
@@ -46,7 +48,14 @@ describe ImportSheet do
         its([4]) { should == 'hm-revenue-customs' }
         its([5]) { should == '08-Apr-2014' }
         its([6]) { should == '' }
-        its([7]) { should == '{}' }
+        describe 'the JSON attachments' do
+          subject { JSON.parse(row[7], symbolize_names: true) }
+
+          its([:title]) { should == country.document.title }
+          its([:url])   { should ==
+            'https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/cis-russia.csv'
+          }
+        end
       end
 
       describe '#save!' do

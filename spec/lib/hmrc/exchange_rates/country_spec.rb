@@ -31,6 +31,7 @@ describe Country do
         its(:currency)        { should == 'Algerian Dinar' }
         its(:issued)          { should == Date.new(2014, 4, 8) }
         its(:original_url)    { should == 'http://example.com/algeria.htm'}
+        its(:basename)        { should == 'algeria' }
 
         describe 'its rows' do
           subject (:rows) { country.rows }

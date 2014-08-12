@@ -17,6 +17,10 @@ module Hmrc
         @original_url = original_url
       end
 
+      def basename
+        File.basename(original_url, '.htm')
+      end
+
       def document
         @_document ||= Hmrc::ExchangeRates::Country::Document.new(self)
       end
