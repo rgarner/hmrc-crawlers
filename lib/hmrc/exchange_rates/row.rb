@@ -8,10 +8,12 @@ module Hmrc
       extend Forwardable
       def_delegators :date_range, :from_date, :to_date, :type
 
-      attr_accessor :row
-      def initialize(row)
+      attr_accessor :row, :country
+
+      def initialize(row, country)
         raise ArgumentError, "expects a 3-valued row, got #{row}" unless row.length == 3
-        self.row = row
+        self.row     = row
+        self.country = country
       end
 
       def date_range
@@ -32,7 +34,12 @@ module Hmrc
           date_range.format(:from_date),
           date_range.format(:to_date),
           sterling_value,
-          currency_per
+          currency_per,
+          if country.euro_date.nil? || date_range.to_date < country.euro_date
+            country.currency
+          else
+            'Euro'
+          end
         ]
       end
     end

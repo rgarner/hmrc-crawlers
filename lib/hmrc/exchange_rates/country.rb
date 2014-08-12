@@ -1,8 +1,8 @@
+require 'csv'
 require 'csv/table'
 require 'hmrc/exchange_rates/row'
-require 'csv'
-require 'active_support/core_ext/string/inflections'
 require 'hmrc/exchange_rates/country/document'
+require 'active_support/core_ext/string/inflections'
 
 module Hmrc
   module ExchangeRates
@@ -43,8 +43,16 @@ module Hmrc
 
       def currency
         @_currency ||= begin
-          /:\s+(?<currency_name>.*)$/ =~ table.caption
-          currency_name.titleize
+          # Assumes "-" is only used in euro dates
+          /:\s+(?<currency_name>[^-]*)?/m =~ table.caption
+          currency_name.strip.titleize
+        end
+      end
+
+      def euro_date
+        @_euro_date ||= begin
+          /.*- Euro from\s+(?<text_euro_date>.*)$/m =~ table.caption
+          Date.strptime(text_euro_date, '%d.%m.%y') if text_euro_date
         end
       end
 
@@ -61,12 +69,12 @@ module Hmrc
 
       def transformed_rows
         table.rows.reject { |r| r[0].strip.gsub("\u00A0", '') == '' }.map do |row|
-          Hmrc::ExchangeRates::Row.new(row).to_a
+          Hmrc::ExchangeRates::Row.new(row, self)
         end
       end
 
       def rows
-        [table.header].concat(transformed_rows)
+        [table.header].concat(transformed_rows.map(&:to_a))
       end
 
       def to_csv

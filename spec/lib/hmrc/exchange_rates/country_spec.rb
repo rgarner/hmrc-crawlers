@@ -42,22 +42,22 @@ describe Country do
 
           it 'has a header row' do
             rows.should include [
-              'Type', 'From date', 'To date', 'Sterling value of currency unit - £', 'Currency units per £1'
+              'Type', 'From date', 'To date', 'Sterling value of currency unit - £', 'Currency units per £1', 'Currency'
             ]
           end
 
           it 'has value rows that transform the date' do
-            rows.should include ['Average', '2013-03-31', '2014-03-31', '0.0079', '126.062557']
+            rows.should include ['Average', '2013-03-31', '2014-03-31', '0.0079', '126.062557', 'Algerian Dinar']
           end
 
           it 'has value rows that transform last-century values' do
             FIRST_LAST_CENTURY_ROW = 30
-            rows[FIRST_LAST_CENTURY_ROW].should == ['Average', '1998-12-30', '1999-12-30', '0.0093322408', '107.1554']
+            rows[FIRST_LAST_CENTURY_ROW].should == ['Average', '1998-12-30', '1999-12-30', '0.0093322408', '107.1554', 'Algerian Dinar']
           end
 
           it 'has date ranges that transform' do
             FIRST_RANGE_ROW = 39
-            rows[FIRST_RANGE_ROW].should == ['Average', '1994-04-15', '1995-03-31', '0.0156146', '64.0424']
+            rows[FIRST_RANGE_ROW].should == ['Average', '1994-04-15', '1995-03-31', '0.0156146', '64.0424', 'Algerian Dinar']
           end
         end
 
@@ -76,7 +76,7 @@ describe Country do
           end
 
           it 'has value rows that transform the date' do
-            to_csv.should include "1999-12-30,0.0093322408,107.1554\n"
+            to_csv.should include "Average,1998-12-30,1999-12-30,0.0093322408,107.1554,Algerian Dinar\n"
           end
         end
       end
@@ -171,6 +171,30 @@ describe Country do
         let(:country_name) { 'brunei' }
 
         its(:name) { should == 'Brunei' }
+      end
+
+      context 'Greece (Euro)' do
+        let(:country_name) { 'greece' }
+
+        its(:name)      { should == 'Greece' }
+        its(:currency)  { should == 'Greek Drachma' }
+        its(:euro_date) { should == Date.new(2002, 1, 1)}
+
+        describe 'its rows' do
+          subject(:rows) { country.transformed_rows }
+
+          it { should have(31).rows }
+
+          it 'has a small number of Euro rows' do
+            euro_rows = rows.select { |row| row.date_range.to_date >= country.euro_date }
+            euro_rows.should have(6).items
+          end
+
+          it 'has a larger number of Drachma rows' do
+            drachma_rows = rows.select { |row| row.date_range.to_date < country.euro_date }
+            drachma_rows.should have(25).items
+          end
+        end
       end
     end
   end

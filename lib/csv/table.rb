@@ -14,7 +14,7 @@ module Csv
                end
     end
 
-    HEADER = ['Type', 'From date', 'To date', 'Sterling value of currency unit - £', 'Currency units per £1']
+    HEADER = ['Type', 'From date', 'To date', 'Sterling value of currency unit - £', 'Currency units per £1', 'Currency']
 
     def header
       HEADER

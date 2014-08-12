@@ -7,23 +7,40 @@ describe Row do
   context 'when input is bad' do
     context 'when is not a 3-valued array' do
       it 'fails' do
-        expect{ Row.new([1, 2]) }.to raise_error(ArgumentError, /expects a 3-valued row/)
+        expect{ Row.new([1, 2], nil) }.to raise_error(ArgumentError, /expects a 3-valued row/)
       end
     end
   end
 
   context 'when input is good' do
-    subject(:row) { Row.new(array) }
+    let(:country)   { double 'country' }
+    let(:euro_date) { nil }
+    subject(:row) { Row.new(array, country) }
+
+    before do
+      country.stub(:currency).and_return('Greek Drachma')
+      country.stub(:euro_date).and_return(euro_date)
+    end
 
     context 'a normal array' do
       let(:array) { %w(31.03.99 0.45506 2.1975) }
 
+      its(:country)        { should == country }
       its(:row)            { should == array }
       its(:sterling_value) { should == '0.45506' }
       its(:currency_per)   { should == '2.1975' }
 
       it 'transforms back to array with YYYY-MM-DD dates' do
-        row.to_a.should == ['Average', '1998-03-31', '1999-03-31', '0.45506', '2.1975']
+        row.to_a.should == ['Average', '1998-03-31', '1999-03-31', '0.45506', '2.1975', 'Greek Drachma']
+      end
+    end
+
+    context 'when the Euro date has been passed' do
+      let(:array)     { %w(31.03.02 0.45506 2.1975) }
+      let(:euro_date) { Date.new(2001, 1, 1) }
+
+      it 'sets the currency appropriately' do
+        row.to_a.should == ['Average', '2001-03-31', '2002-03-31', '0.45506', '2.1975', 'Euro']
       end
     end
 
@@ -37,7 +54,7 @@ describe Row do
       its(:sterling_value) { should == '0.0156146' }
       its(:currency_per)   { should == '64.0424' }
 
-      its(:to_a) { should == ['Average', '1994-04-15', '1995-03-31', '0.0156146', '64.0424']}
+      its(:to_a) { should == ['Average', '1994-04-15', '1995-03-31', '0.0156146', '64.0424', 'Greek Drachma']}
     end
 
     context 'the French problem' do
@@ -49,7 +66,7 @@ describe Row do
 
       its(:sterling_value) { should == '0.0941256201' }
       its(:currency_per)   { should == '10.6241' }
-      its(:to_a)      { should == ['Average', '2001-04-01', '2002-02-27', '0.0941256201', '10.6241']}
+      its(:to_a)      { should == ['Average', '2001-04-01', '2002-02-27', '0.0941256201', '10.6241', 'Greek Drachma']}
     end
 
     context 'whitespace all over the shop' do
@@ -61,7 +78,7 @@ describe Row do
 
       its(:sterling_value) { should == '0.0941256201' }
       its(:currency_per)   { should == '10.6241' }
-      its(:to_a)      { should == ['Average', '2001-04-01', '2002-02-27', '0.0941256201', '10.6241']}
+      its(:to_a)      { should == ['Average', '2001-04-01', '2002-02-27', '0.0941256201', '10.6241', 'Greek Drachma']}
     end
   end
 end
