@@ -29,7 +29,7 @@ module Hmrc
           country.document.summary,
           country.document.body,
           'hm-revenue-customs',
-          'first_published',
+          country.issued.strftime('%d-%b-%Y'),
           '',
           '{}'
         ]
@@ -45,7 +45,6 @@ module Hmrc
       end
 
       def save!(filename = FILENAME)
-        puts Dir.pwd
         File.open(filename, 'w') do |f|
           f.write(to_csv)
         end

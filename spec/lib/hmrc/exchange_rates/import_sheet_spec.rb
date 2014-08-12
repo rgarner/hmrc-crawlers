@@ -44,7 +44,7 @@ describe ImportSheet do
         its([2]) { should == 'Historical exchange rates for CIS: Russia' }
         its([3]) { should include '*  CIS: the official rate ceased to be quoted from 31 March 1996.' }
         its([4]) { should == 'hm-revenue-customs' }
-        its([5]) { should == 'first_published' }
+        its([5]) { should == '08-Apr-2014' }
         its([6]) { should == '' }
         its([7]) { should == '{}' }
       end
