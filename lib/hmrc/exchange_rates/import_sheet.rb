@@ -38,7 +38,7 @@ module Hmrc
           JSON.dump([
             {
               title: country.document.title,
-              url: "https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/#{country.basename}.csv"
+              link: "https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/#{country.basename}.csv"
             }
           ])
         ]

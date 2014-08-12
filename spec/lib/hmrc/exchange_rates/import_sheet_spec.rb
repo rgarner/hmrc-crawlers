@@ -54,7 +54,7 @@ describe ImportSheet do
           subject { JSON.parse(row[8], symbolize_names: true).first }
 
           its([:title]) { should == country.document.title }
-          its([:url])   { should ==
+          its([:link])  { should ==
             'https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/cis-russia.csv'
           }
         end
