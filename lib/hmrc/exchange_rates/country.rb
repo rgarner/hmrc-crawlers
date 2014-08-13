@@ -47,7 +47,8 @@ module Hmrc
       end
 
       OVERRIDE_CURRENCY_BY_BASENAME = {
-        'austria' => 'Unit of currency: AUSTRIAN SCHILLING - Euro from 1.01.99'
+        'austria' => 'Unit of currency: AUSTRIAN SCHILLING - Euro from 1.01.99',
+        'spain'   => 'Unit of currency: PESETA - Euro from 1.01.99'
       }
 
       def currency_text

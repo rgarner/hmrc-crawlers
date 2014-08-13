@@ -216,6 +216,13 @@ describe Country do
             pre_euro_rows.should have(38).items
           end
         end
+
+        context 'Spain (no usable unit of currency header)' do
+          let(:country_name) { 'spain' }
+
+          its(:currency)  { should == 'Peseta' }
+          its(:euro_date) { should == Date.new(1999, 1, 1)}
+        end
       end
     end
   end
