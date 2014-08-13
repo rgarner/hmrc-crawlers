@@ -57,7 +57,7 @@ describe ImportSheet do
 
           its([:title]) { should == country.document.title }
           its([:link])  { should ==
-            'https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results2/cis-russia.csv'
+            'https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/cis-russia.csv'
           }
         end
       end
