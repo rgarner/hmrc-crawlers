@@ -33,7 +33,7 @@ module Hmrc
           country.document.summary,
           country.document.body,
           'hm-revenue-customs',
-          'hmrc-exchange-rates',
+          'certified-currency-exchange-rates-for-tax-calculation-and-filing',
           'tax-and-revenue',
           country.issued.strftime('%d-%b-%Y'),
           'notices',
