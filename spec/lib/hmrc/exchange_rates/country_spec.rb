@@ -108,13 +108,17 @@ describe Country do
         its(:currency) { should == 'Rouble (Official/Floating)' }
 
         describe 'its rows' do
-          subject(:rows) { country.rows }
+          subject(:rows) { country.transformed_rows }
 
-          it 'has a header row' do
-            rows.should include Csv::Table::HEADER
+          it { should have(28).rows }
+
+          it 'has market rows' do
+            rows.select { |r| r.type == :'average/market' }.should have(8).matching_items
           end
 
-          it { should have(29).rows }
+          it 'has official rows' do
+            rows.select { |r| r.type == :'average/official' }.should have(6).matching_items
+          end
         end
       end
 

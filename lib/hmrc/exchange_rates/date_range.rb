@@ -10,6 +10,8 @@ module Hmrc
       SIMPLE_DATE    = Regexp.new(DATE_PART)
       SIMPLE_RANGE   = Regexp.new("#{DATE_PART}\s+to\s+#{DATE_PART}")
       SIMPLE_AVERAGE = Regexp.new("Average for year to #{DATE_PART}")
+      'Average for year to 31. 3.96 (Market)'
+      MARKET_AVERAGE = Regexp.new("Average for year to #{DATE_PART}\s*\\((Market|Official)\\)")
       SLASH_RANGE    = Regexp.new("Average for #{SLASH_DATE}\s?-\s?#{SLASH_DATE}")
       AVERAGE_RANGE  = Regexp.new("Average #{DATE_PART}\s+to\s+#{DATE_PART}")
       NO_DAY_RANGE   = Regexp.new('Average for ([0-9]{1,2}\.[0-9]{1,2}) to ([0-9]{1,2}\.[0-9]{1,2})')
@@ -61,6 +63,10 @@ module Hmrc
                                         [zero_fill($1), zero_fill($2)]
                                       when SIMPLE_RANGE
                                         [zero_fill($1), zero_fill($2)]
+                                      when MARKET_AVERAGE
+                                        subtype = $2.downcase
+                                        @type = "average/#{subtype}".to_sym
+                                        [nil, zero_fill($1)]
                                       when SIMPLE_AVERAGE
                                         [nil, zero_fill($1)]
                                       when SPOT_DATE

@@ -139,4 +139,16 @@ describe DateRange do
     end
     its(:from_date) { should == Date.new(2005, 12, 31) }
   end
+
+  context 'Market/Official averages' do
+    context 'market' do
+      let(:input) { 'Average for year to 31. 3.96 (Market)' }
+      its(:type)  { should == :'average/market'}
+    end
+
+    context 'official' do
+      let(:input) { 'Average for year to 31. 3.96 (Official)' }
+      its(:type)  { should == :'average/official'}
+    end
+  end
 end
