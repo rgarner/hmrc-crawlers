@@ -51,7 +51,7 @@ describe ImportSheet do
         its([5]) { should == 'hmrc-exchange-rates' }
         its([6]) { should == 'tax-and-revenue' }
         its([7]) { should == '08-Apr-2014' }
-        its([8]) { should == '' }
+        its([8]) { should == 'notices' }
         describe 'the JSON attachments' do
           subject { JSON.parse(row[9], symbolize_names: true).first }
 

@@ -36,7 +36,7 @@ module Hmrc
           'hmrc-exchange-rates',
           'tax-and-revenue',
           country.issued.strftime('%d-%b-%Y'),
-          '',
+          'notices',
           JSON.dump([
             {
               title: country.document.title,
