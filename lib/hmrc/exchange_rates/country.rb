@@ -3,6 +3,7 @@ require 'csv/table'
 require 'hmrc/exchange_rates/row'
 require 'hmrc/exchange_rates/country/document'
 require 'active_support/core_ext/string/inflections'
+require 'hmrc/exchange_rates/inflections'
 
 module Hmrc
   module ExchangeRates

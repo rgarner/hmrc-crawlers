@@ -183,6 +183,11 @@ describe Country do
         end
       end
 
+      context 'the currency is not a good candidate for default title case' do
+        let(:country_name) { 'usa' }
+        its(:currency)     { should == 'US Dollar' }
+      end
+
       context 'When in the euro' do
         let(:euro_rows)     { rows.select { |row| row.date_range.to_date >= country.euro_date } }
         let(:pre_euro_rows) { rows.select { |row| row.date_range.to_date <  country.euro_date } }
