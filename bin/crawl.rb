@@ -7,7 +7,7 @@ require 'hmrc/exchange_rates'
 
 def create_or_update_content_for(page)
   Hmrc::ExchangeRates::Country.new(page.doc, page.url.to_s).tap do |country|
-    base_filename = File.join('results', File.basename(page.url.to_s, 'htm'))
+    base_filename = File.join('results2', File.basename(page.url.to_s, 'htm'))
 
     File.open(base_filename + 'csv', 'w') do |f|
       f.write(country.to_csv)
@@ -15,7 +15,7 @@ def create_or_update_content_for(page)
   end
 end
 
-FileUtils.mkdir_p('results')
+FileUtils.mkdir_p('results2')
 
 import_sheet = Hmrc::ExchangeRates::ImportSheet.new
 

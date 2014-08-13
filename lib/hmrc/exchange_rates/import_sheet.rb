@@ -3,7 +3,7 @@ require 'json'
 module Hmrc
   module ExchangeRates
     class ImportSheet
-      FILENAME = 'results/_import.csv'
+      FILENAME = 'results2/_import.csv'
 
       HEADER = [
         'old_url',
@@ -40,7 +40,7 @@ module Hmrc
           JSON.dump([
             {
               title: country.document.title,
-              link: "https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results/#{country.basename}.csv"
+              link: "https://raw.githubusercontent.com/rgarner/hmrc-crawlers/master/results2/#{country.basename}.csv"
             }
           ])
         ]
