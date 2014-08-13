@@ -46,17 +46,25 @@ module Hmrc
           end.compact.first
       end
 
+      OVERRIDE_CURRENCY_BY_BASENAME = {
+        'austria' => 'Unit of currency: AUSTRIAN SCHILLING - Euro from 1.01.99'
+      }
+
+      def currency_text
+        OVERRIDE_CURRENCY_BY_BASENAME[basename] || table.caption
+      end
+
       def currency
         @_currency ||= begin
           # Assumes "-" is only used in euro dates
-          /:\s+(?<currency_name>[^-]*)?/m =~ table.caption
+          /:\s+(?<currency_name>[^-]*)?/m =~ currency_text
           currency_name.strip.titleize
         end
       end
 
       def euro_date
         @_euro_date ||= begin
-          /.*- Euro from\s+(?<text_euro_date>.*)$/m =~ table.caption
+          /.*- Euro from\s+(?<text_euro_date>.*)$/m =~ currency_text
           Date.strptime(text_euro_date, '%d.%m.%y') if text_euro_date
         end
       end

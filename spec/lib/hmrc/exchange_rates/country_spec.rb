@@ -167,40 +167,55 @@ describe Country do
         end
       end
 
-      context 'Brunei (broken title)' do
-        let(:country_name) { 'brunei' }
+      context 'when the title is broken' do
+        context 'Brunei' do
+          let(:country_name) { 'brunei' }
+          its(:name) { should == 'Brunei' }
+        end
 
-        its(:name) { should == 'Brunei' }
+        context 'Latvia' do
+          let(:country_name) { 'latvia' }
+          its(:name) { should == 'Latvia' }
+        end
       end
 
-      context 'Greece (Euro)' do
-        let(:country_name) { 'greece' }
+      context 'When in the euro' do
+        let(:euro_rows)     { rows.select { |row| row.date_range.to_date >= country.euro_date } }
+        let(:pre_euro_rows) { rows.select { |row| row.date_range.to_date <  country.euro_date } }
 
-        its(:name)      { should == 'Greece' }
-        its(:currency)  { should == 'Greek Drachma' }
-        its(:euro_date) { should == Date.new(2002, 1, 1)}
+        let(:rows) { country.transformed_rows }
 
-        describe 'its rows' do
-          subject(:rows) { country.transformed_rows }
+        context 'Greece (normal)' do
+          let(:country_name) { 'greece' }
 
-          it { should have(31).rows }
+          its(:name)      { should == 'Greece' }
+          its(:currency)  { should == 'Greek Drachma' }
+          its(:euro_date) { should == Date.new(2002, 1, 1)}
 
           it 'has a small number of Euro rows' do
-            euro_rows = rows.select { |row| row.date_range.to_date >= country.euro_date }
             euro_rows.should have(6).items
           end
 
           it 'has a larger number of Drachma rows' do
-            drachma_rows = rows.select { |row| row.date_range.to_date < country.euro_date }
-            drachma_rows.should have(25).items
+            pre_euro_rows.should have(25).items
           end
         end
-      end
 
-      context 'Latvia (bad title "Laos")' do
-        let(:country_name) { 'latvia' }
+        context 'Austria (no usable unit of currency header)' do
+          let(:country_name) { 'austria' }
 
-        its(:name) { should == 'Latvia' }
+          its(:name)      { should == 'Austria' }
+          its(:currency)  { should == 'Austrian Schilling' }
+          its(:euro_date) { should == Date.new(1999, 1, 1)}
+
+          it 'has a smaller number of Euro rows' do
+            euro_rows.should have(26).items
+          end
+
+          it 'has a larger number of Austrian Schilling rows' do
+            pre_euro_rows.should have(38).items
+          end
+        end
       end
     end
   end
