@@ -33,12 +33,17 @@ module Hmrc
         doc.at_css('#centre_col table table') || doc.at_css('#centre_col table')
       end
 
+      OVERRIDE_NAME_BY_BASENAME = {
+        'latvia' => 'Latvia'
+      }
+
       def name
-        @_name ||= ['title', '#centre_col h1'].map do |possible_title|
-          text = doc.at_css(possible_title)
-          text && (/exchange rates:\s*(?<parsed_name>.*)/m =~ text)
-          parsed_name
-        end.compact.first
+        @_name ||=
+          OVERRIDE_NAME_BY_BASENAME[basename] || ['title', '#centre_col h1'].map do |possible_title|
+            text = doc.at_css(possible_title)
+            text && (/exchange rates:\s*(?<parsed_name>.*)/m =~ text)
+            parsed_name
+          end.compact.first
       end
 
       def currency

@@ -196,6 +196,12 @@ describe Country do
           end
         end
       end
+
+      context 'Latvia (bad title "Laos")' do
+        let(:country_name) { 'latvia' }
+
+        its(:name) { should == 'Latvia' }
+      end
     end
   end
 end
