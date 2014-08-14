@@ -21,11 +21,15 @@ module Hmrc
       end
 
       def sterling_value
-        row[1].strip
+        strip_unwanted(row[1])
       end
 
       def currency_per
-        row[2].sub('(Euro)', '').strip
+        strip_unwanted(row[2])
+      end
+
+      def ecu?
+        [row[1], row[2]].find {|s| s.include?('(ECU)')}
       end
 
       def to_a
@@ -35,13 +39,24 @@ module Hmrc
           date_range.format(:to_date),
           sterling_value,
           currency_per,
-          if country.euro_date.nil? || date_range.to_date < country.euro_date
+          case
+          when ecu?
+            'ECU'
+          when country.euro_date.nil? || date_range.to_date < country.euro_date
             country.currency
           else
             'Euro'
           end
         ]
       end
+
+    private
+      UNWANTED = /\((ECU|Euro)\)/
+
+      def strip_unwanted(value)
+        value.sub(UNWANTED, '').strip
+      end
     end
+
   end
 end

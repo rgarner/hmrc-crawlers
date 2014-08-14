@@ -84,5 +84,15 @@ describe Row do
       its(:currency_per)   { should == '10.6241' }
       its(:to_a)      { should == ['Average', '2001-04-01', '2002-02-27', '0.0941256201', '10.6241', 'Greek Drachma']}
     end
+
+    context 'European Currency Unit' do
+      let(:array) { ['Spot rate on 31.12.98', '0.70577 (ECU)', '1.4169 (ECU)'] }
+
+      its(:sterling_value) { should == '0.70577' }
+      its(:currency_per)   { should == '1.4169' }
+      it                   { should be_ecu }
+
+      its(:to_a) { should == ['Spot', nil, '1998-12-31', '0.70577', '1.4169', 'ECU'] }
+    end
   end
 end
