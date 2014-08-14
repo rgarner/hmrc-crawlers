@@ -17,19 +17,19 @@ module Hmrc
       end
 
       def date_range
-        DateRange.new(row[0])
+        @_date_range = DateRange.new(row[0])
       end
 
       def sterling_value
-        strip_unwanted(row[1])
+        @_sterling_value = strip_unwanted(row[1])
       end
 
       def currency_per
-        strip_unwanted(row[2])
+        @_currency_per = strip_unwanted(row[2])
       end
 
       def ecu?
-        [row[1], row[2]].find {|s| s.include?('(ECU)')}
+        @_ecu = [row[1], row[2]].find {|s| s.include?('(ECU)')}
       end
 
       def to_a
